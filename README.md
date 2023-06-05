@@ -25,6 +25,6 @@
 
 ![Andre Micaels's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreMicael&theme=radical&show_icons=true) 
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreMicael&theme=tokyonight)
+[![Mohammad Saifur Rahman's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs?username=saifurrahman1193&hide=html,scss,stylus,blade,jupyter%20notebook,python,css,shell,batchfile,dockerfile,typescript&theme=algolia&show_icons=true)](https://github.com/saifurrahman1193)
 
 
