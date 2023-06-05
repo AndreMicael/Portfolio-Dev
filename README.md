@@ -23,4 +23,6 @@
 
 
 
-![Andre Micaels's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreMicael&theme=radical&show_icons=true) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
+![Andre Micaels's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreMicael&theme=radical&show_icons=true) 
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreMicael&theme=radical)](https://github.com/AndreMicael/github-readme-stats)
