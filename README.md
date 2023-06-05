@@ -5,7 +5,7 @@
 
 - 🌱 Estou atualmente aprendendo **Sass e React**
 
-- 👨‍💻 Todos os projetos estarão disponíveis em meu portfolio no seguinte link: [Em Breve](Em Breve)
+- 👨‍💻 Todos os projetos estarão disponíveis em meu portfolio no seguinte link: [Em Breve]
 
 - 📝 Estou planejando escrever alguns artigos. Fiquem de olho no meu Linkedin: [https://www.linkedin.com/in/andremsampaio/](https://www.linkedin.com/in/andremsampaio/)
 
