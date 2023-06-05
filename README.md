@@ -11,7 +11,7 @@
 
 - 📫 Fale comigo pelo e-mail **andremicael@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Meus Contatos:</h3>
 <p align="left">
 <a href="https://codepen.io/andremicael" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="andremicael" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/andremsampaio" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="andremsampaio" height="30" width="40" /></a>
