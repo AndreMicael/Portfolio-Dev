@@ -34,11 +34,6 @@ Projeto em Andamento: Criação do meu Portfólio pessoal. Irá conter dados ace
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andremsampaio/)
 
 
-## 🛠 Habilidades
-Javascript, React.Js, HTML, CSS...
-
-
-
 ## Stack utilizada
 
 **Front-end:** React
