@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'coolvetica_rg';
+    src: url('../fonts/coolvetica_rg-webfont.woff') format('woff2'),
+         url('../fonts/coolvetica_rg-webfont.woff') format('woff') ;
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+  $font-primary: 'coolvetica_rg';
+
+.home--container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   // border: 1px dashed lime;
+    width: 100vw;
+    height: 85vh;
+
+        .logo--side {
+            width: 15vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @keyframes rotate-logo {
+                from {
+                    transform: translateX(-50%) rotate(0deg);
+                } to {
+                    transform: translateX(-50%) rotate(360deg);
+                }
+                
+            }
+
+            img {
+
+                width: 60vw;
+                padding: 0;
+                animation: rotate-logo 180s linear 15s infinite normal;
+                -moz-animation: rotate-logo 180s linear 15s infinite normal;
+                -ms-animation: rotate-logo 180s linear 15s infinite normal;
+                -o-animation: rotate-logo 180s linear 15s infinite normal;
+                -webkit-animation: rotate-logo 180s linear 15s infinite normal;
+            }
+
+           
+
+        }
+
+        .info--side {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+           // border: 1px solid navy;
+            width: 85vw;
+            padding: 3%;
+
+           
+
+         
+            
+            
+            .info--text{
+                border: 1px solid orange;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                padding: 4%;
+                width: 86%;
+                transform: scale(120%);
+               
+
+                .info--column{
+                    border: 1px solid rgb(253, 0, 253);
+                    display: flex;
+                    flex-direction: column;
+                    height: 80%;
+                    
+                }
+               
+            
+            }
+           
+            
+            .info--line{
+                
+                display: flex;
+                align-self: stretch; 
+                align-items: flex-end;
+
+
+               
+
+
+                .info--button {
+                    
+                    width: 55%;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    justify-content: space-around;
+
+
+                    .button--git {
+                       // border: 1px solid red;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: column;
+                        
+
+                        img {
+                            width: 30%;
+                         //   border: 1px solid red;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .button--linkedin {
+                    //    border: 1px solid red;
+                        width: 33%;
+
+                        img {
+                            width: 30%;
+                          //  border: 1px solid red;
+                            margin: 0 auto;
+                        }
+                        
+                    }
+
+                    .button--cv {
+                     //  border: 1px solid red;
+                        width: 33%;
+
+                        img {
+                            width: 30%;
+                         //  border: 1px solid red;
+                            margin: 0 auto;
+                        }
+                        
+                    }
+
+                   
+
+                    .baloes {
+                        
+                        width: 100%;
+                        margin: 0px auto;
+                        border: 3px solid #000000;
+                        padding: 5px;
+                        text-align: center;
+                        position: relative;
+                        transform: scale(70%);
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        
+                      }
+
+                      
+                        .sb8:before {
+                            content: "";
+                            width: 0px;
+                            height: 0px;
+                            position: absolute;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid #000000;
+                            border-top: 10px solid #000000;
+                            border-bottom: 10px solid transparent;
+                            right: 20px;
+                            bottom: -23px;
+                            transform: rotate(270deg);
+                            
+                        }
+                        
+                        .sb8:after {
+                            content: "";
+                            width: 0px;
+                            height: 0px;
+                            position: absolute;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid #fff;
+                            border-top: 10px solid #fff;
+                            border-bottom: 10px solid transparent;
+                            right: 17px;
+                            bottom: -15px;
+                            transform: rotate(270deg);
+                        }
+
+
+
+                }
+    
+
+                
+            }
+
+            
+
+            p {
+                text-transform: uppercase;
+                padding: 0;
+                text-align: left;
+                font-size: 20px;
+                
+            }
+            h1 {
+                font-family: $font-primary ;
+                font-weight: 400;
+                font-size: 12vw;
+                text-transform: uppercase;
+                padding: 0;               
+                border: 1px solid #0ef02186;
+                text-align: left;
+                width: 100%;
+                line-height: 10vw;
+                letter-spacing: 4px;
+                
+            }
+
+            h2 {
+                font-family: $font-primary ;
+                font-weight: 400;
+                font-size: 5vw;
+                text-transform: uppercase;
+                padding: 0;
+               // border: 1px solid navy;
+                text-align: left;
+                width: 100%;
+                line-height: 4.5vw;
+               
+                
+               
+            }
+            .info--description{
+                text-align: right;
+                border: 1px solid navy;
+                width: 60%;
+                align-self: flex-end;
+                
+                
+                
+                
+
+            }
+        }
+
+
+}

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import Home from './Home'
 import DarkMode from './Navbar/darkMode';
@@ -19,9 +18,6 @@ function App(props) {
             setDarkMode('modo-claro')
           }
     }   
-
-
-
   
 
   return (
@@ -31,7 +27,6 @@ function App(props) {
 
 
       <Navbar> <DarkMode> <div className='button-container--app' onClick={changeMode}></div> </DarkMode> </Navbar>
-      
       <Home/>
       
       </div>
