@@ -2,6 +2,7 @@
 <h3 align="center">Sou desenvolvedor front-end.</h3>
 
 - 🔭 Estou atualmente trabalhando no meu [Portfólio Pessoal](https://github.com/AndreMicael/Portfolio_Dev/)
+- Estou desenvolvendo utilizando React, Sass, HTML.
 
 - 🌱 Estou atualmente aprendendo **Sass e React**
 
