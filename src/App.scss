@@ -15,8 +15,8 @@ $font-secondary: 'Rubik', sans-serif;
 }
 
 body{
-  font-family: $font-primary;
-  font-weight: lighter;
+  font-family: $font-secondary;
+  
  
 }
 
@@ -62,4 +62,30 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.modo-claro {
+  background-color: #fff;
+  color: #000;
+}
+
+.modo-escuro {
+  background-color: #000;
+  color: #fff;
+
+  a {
+    color: #fff !important;
+  }
+
+}
+
+.button-container--app {
+  
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  
+
+ 
 }
