@@ -41,6 +41,7 @@
                 -ms-animation: rotate-logo 180s linear 15s infinite normal;
                 -o-animation: rotate-logo 180s linear 15s infinite normal;
                 -webkit-animation: rotate-logo 180s linear 15s infinite normal;
+                 
             }
 
            
@@ -62,7 +63,7 @@
             
             
             .info--text{
-                border: 1px solid orange;
+               // border: 1px solid orange;
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
@@ -72,7 +73,7 @@
                
 
                 .info--column{
-                    border: 1px solid rgb(253, 0, 253);
+                 //   border: 1px solid rgb(253, 0, 253);
                     display: flex;
                     flex-direction: column;
                     height: 80%;
@@ -101,12 +102,24 @@
                     padding: 10px;
                     justify-content: space-around;
 
+               
+                    .button--text{
+                        text-align: center;
+                    }
 
-                    .button--git {
+                    .button--git:hover, .button--linkedin:hover, .button--cv:hover                    
+                    {
+                        transform: scale(110%);
+                        transition: transform 0.1s ease;
+                        cursor: pointer;
+                    }
+
+                     .button--git {
                        // border: 1px solid red;
                         width: 33%;
                         display: flex;
                         flex-direction: column;
+                              
                         
 
                         img {
@@ -178,8 +191,8 @@
                             height: 0px;
                             position: absolute;
                             border-left: 10px solid transparent;
-                            border-right: 10px solid #fff;
-                            border-top: 10px solid #fff;
+                            border-right: 10px solid rgba(255, 255, 255,0);
+                            border-top: 10px solid rgba(255, 255, 255,0);
                             border-bottom: 10px solid transparent;
                             right: 17px;
                             bottom: -15px;
@@ -209,7 +222,7 @@
                 font-size: 12vw;
                 text-transform: uppercase;
                 padding: 0;               
-                border: 1px solid #0ef02186;
+            //    border: 1px solid #0ef02186;
                 text-align: left;
                 width: 100%;
                 line-height: 10vw;
@@ -233,7 +246,7 @@
             }
             .info--description{
                 text-align: right;
-                border: 1px solid navy;
+            //    border: 1px solid navy;
                 width: 60%;
                 align-self: flex-end;
                 

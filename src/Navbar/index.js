@@ -26,7 +26,7 @@ function Navbar(props) {
             </ul>
 
              </div>
-            <div className='button--darkmode' > {props.children} </div>
+            <div className='button--darkmode no-select' > {props.children} </div>
         </nav>
 
      );

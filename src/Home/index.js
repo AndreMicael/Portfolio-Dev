@@ -1,23 +1,33 @@
 import React from 'react';
-import './Home.scss'
-import LogoReact from '../img/logo.svg'
+import './Home.scss';
 import Balloons from './Balloons';
-import GitHub from '../img/github.png'
-import Linkedin from '../img/linkedin.png'
-import Resume from '../img/resume.png'
+import GitHub from '../img/github.png';
+import Linkedin from '../img/linkedin.png';
+import Resume from '../img/resume.png';
 
 
-function Home() {
 
-   
+
+function Home(props) {
+  
+    const gitOpen = () => {
+        window.open('https://github.com/AndreMicael', '_blank');
+        window.focus()
+      };
+
+      const LinkedinOpen = () => {
+        window.open('https://www.linkedin.com/in/andremsampaio/', '_blank');
+        window.focus()
+      };
+
 
     return ( 
 
-        <section className='home--container'>
+        <section className='home--container no-select'>
            
           <div className='logo--side'> 
          
-           <img src={LogoReact} alt="Logo-React-Animado"></img>
+           {props.children}           
 
           </div>
           <div className='info--side'> 
@@ -27,23 +37,26 @@ function Home() {
                
                <div className='info--line'> <div className='info--column'> <p> Prazer, me chamo André </p>  <h2> Front-End </h2>  </div> 
                <div className='info--button'>
-               <div className='button--git'>
-                  
+               
+               
+               <div onClick={gitOpen} className='button--git'>              
 
-                   <Balloons>Conheça meus projetos</Balloons>
-                   <img src={GitHub}></img>
+                   <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons>
+                   <img src={GitHub} alt="GitHub"></img>
 
                   </div>
-               <div className='button--linkedin'> 
+                  
+
+               <div onClick={LinkedinOpen} className='button--linkedin'> 
               
-               <Balloons> Vamos nos<br/> conhecer?</Balloons>
-                   <img src={Linkedin}></img>
+               <Balloons> <p className='button--text'>Vamos nos<br/> conhecer?</p></Balloons>
+                   <img src={Linkedin} alt="Linkedin"></img>
                
                </div> 
                <div className='button--cv'> 
                
-               <Balloons>Ver Meu<br/> Curriculo  </Balloons>
-                   <img src={Resume}></img>
+               <Balloons><p className='button--text'>Ver Meu<br/> Curriculo  </p></Balloons>
+                   <img src={Resume} alt="Curriculo"></img>
 
                 </div> 
                </div>
