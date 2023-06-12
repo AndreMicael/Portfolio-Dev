@@ -4,6 +4,7 @@ import Balloons from './Balloons';
 import GitHub from '../img/github.png';
 import Linkedin from '../img/linkedin.png';
 import Resume from '../img/resume.png';
+import Curriculo from '../files/CV_André_Micael_Sampaio_Pinto.pdf';
 
 
 
@@ -19,6 +20,22 @@ function Home(props) {
         window.open('https://www.linkedin.com/in/andremsampaio/', '_blank');
         window.focus()
       };
+
+      const getCurriculo = () => {
+        // Usando Javascript para puxar arquivo PDF 
+        fetch(Curriculo).then(response => {
+            response.blob().then(blob => {
+                // Criando novo objeto do PDF
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setando valores as propriedades
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Curriculo';
+                alink.click();
+            })
+        })
+    }
+
 
 
     return ( 
@@ -53,7 +70,10 @@ function Home(props) {
                    <img src={Linkedin} alt="Linkedin"></img>
                
                </div> 
-               <div className='button--cv'> 
+               <div className='button--cv' onClick={getCurriculo}>
+
+
+     
                
                <Balloons><p className='button--text'>Ver Meu<br/> Curriculo  </p></Balloons>
                    <img src={Resume} alt="Curriculo"></img>
