@@ -18,6 +18,8 @@
     overflow-x: hidden;
     height: 85vh;
 
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
         .logo--side {
             border: 1px solid red;
             width: 15vw;
@@ -50,21 +52,15 @@
            
 
         }
-
+    ////Todas as estilizações dos textos e links do lado direito da página Home. 
         .info--side {
-
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             border: 1px solid navy;
             width: 85vw;
-            padding: 3%;
-
-           
-
-         
-            
-            
+            padding: 3%;           
+                                
             .info--text{
                // border: 1px solid orange;
                 display: flex;

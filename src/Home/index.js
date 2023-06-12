@@ -30,7 +30,7 @@ function Home(props) {
                 // Setando valores as propriedades
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'Curriculo';
+                alink.download = 'André Micael Sampaio Pinto - Curriculo Front-End.pdf';
                 alink.click();
             })
         })
@@ -40,27 +40,19 @@ function Home(props) {
 
     return ( 
 
-        <section className='home--container no-select'>
-           
-          <div className='logo--side'> 
-         
+        <section className='home--container no-select'>           
+          <div className='logo--side'>          
            {props.children}           
-
           </div>
           <div className='info--side'> 
-
-
-           <div className='info--text'>
-               
+           <div className='info--text'>               
                <div className='info--line'> <div className='info--column'> <p> Prazer, me chamo André </p>  <h2> Front-End </h2>  </div> 
-               <div className='info--button'>
+               <div className='info--button'>            
                
-               
-               <div onClick={gitOpen} className='button--git'>              
+               <div onClick={gitOpen} className='button--git'>            
 
                    <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons>
                    <img src={GitHub} alt="GitHub"></img>
-
                   </div>
                   
 
@@ -75,7 +67,7 @@ function Home(props) {
 
      
                
-               <Balloons><p className='button--text'>Ver Meu<br/> Curriculo  </p></Balloons>
+               <Balloons><p className='button--text'>Baixar Meu<br/> Curriculo  </p></Balloons>
                    <img src={Resume} alt="Curriculo"></img>
 
                 </div> 
