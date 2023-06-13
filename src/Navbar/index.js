@@ -17,11 +17,11 @@ function Navbar(props) {
             <div className='links--nav'> 
             
             <ul>
-                <li> <a className='animacao-underline' href='#'>Inicio</a>  </li>
-                <li> <a className='animacao-underline' href='#'>Habilidades</a> </li>
-                <li> <a className='animacao-underline' href='#'>Experiencias</a> </li>
-                <li> <a className='animacao-underline' href='#'>Projetos</a> </li>
-                <li> <a className='animacao-underline' href='#'>Contatos</a> </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Inicio</a>  </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Habilidades</a> </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Experiencias</a> </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Projetos</a> </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Contatos</a> </li>
 
             </ul>
 

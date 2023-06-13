@@ -29,7 +29,7 @@ function DarkMode(props) {
         <div className='button--container' >  
             <div className='button--border' > 
             <div className='button--circle' style={containerStyle} onClick={handleClick}>{props.children}   
-                <img src={circleIcon}/>
+                <img src={circleIcon} alt="icon-darkmode"/>
             </div>
             </div>
         </div>

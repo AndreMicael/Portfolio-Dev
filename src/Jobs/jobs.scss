@@ -1,0 +1,20 @@
+
+$font-primary: 'coolvetica_rg';
+$font-secondary: 'Rubik', sans-serif;
+$color-primary-dark: #61b8bb;
+$color-secondary-dark: rgb(37, 37, 37);
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+
+@font-face {
+  font-family: 'coolvetica_rg';
+  src: url('../fonts/coolvetica_rg-webfont.woff') format('woff2'),
+       url('../fonts/coolvetica_rg-webfont.woff') format('woff') ;
+  font-weight: normal;
+  font-style: normal; 
+}
+
+.jobs--container {
+
+}
