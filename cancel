@@ -1,0 +1,229 @@
+[33mcommit e3d8468beae10b7d4d47e32015408c3b954bcaae[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Tue Jun 13 17:29:35 2023 -0400
+
+    Teste Branch
+
+[33mcommit e2c345580668ea98dde68563624d7de883acf14a[m[33m ([m[1;32mFinalHome[m[33m)[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Mon Jun 12 13:00:53 2023 -0400
+
+    Correção de textos
+
+[33mcommit 5a2e4aa20bb78cbee194bfedc98f613a6f81677d[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Mon Jun 12 12:51:58 2023 -0400
+
+    Botão de download de curriculo funcionando
+
+[33mcommit 245286e7ca0ba467c51fcbf936bab58a79ebb471[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Mon Jun 12 12:36:22 2023 -0400
+
+    Erro do carregamento da Logo React corrido
+
+[33mcommit 1bbb5f96d359ed1e75483ca9f5df1ceae104f964[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 11 21:10:43 2023 -0400
+
+    Adicionado Links na Home
+
+[33mcommit 00aadbbafc1954256ae74dc23df89bd8b33937b2[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 11 11:23:57 2023 -0400
+
+    Seção a Home Adicionada
+
+[33mcommit 6dea6bccf3f6ba4437e028e9f03a02379d039a1d[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sat Jun 10 21:23:30 2023 -0400
+
+    Dark Mode Corrigido
+
+[33mcommit 82dea94b7fa0d34475826f576c9d37708971ff98[m
+Merge: c0b87b66 94c5de64
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sat Jun 10 21:22:01 2023 -0400
+
+    Merge branch 'main' of https://github.com/AndreMicael/Portfolio_Dev
+
+[33mcommit c0b87b66d3c1386630e7001dc048ddcb1899ddb4[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sat Jun 10 21:21:36 2023 -0400
+
+    Dark Mode Corrigido
+
+[33mcommit 94c5de647ea540d1ddc081307ffefea99ae73fdb[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Sat Jun 10 21:17:19 2023 -0400
+
+    Update README.md
+
+[33mcommit ee309b2f307c51e9170c80221748fcacde506002[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sat Jun 10 21:11:55 2023 -0400
+
+    Navbar adicionada
+
+[33mcommit 803e718e2b5fa7b1044cb5ddb566154d9b6dc048[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 20:15:12 2023 -0400
+
+    Update README.md
+
+[33mcommit cf72b8eb356254d610d4b946ed4cd34a11eabdf5[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 20:14:10 2023 -0400
+
+    Update README.md
+
+[33mcommit c41ffc8469dbd097a79d4581df21326e5b98d72e[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 20:13:51 2023 -0400
+
+    Update README.md
+
+[33mcommit 3dcbd62ebbc07abf546104fc12b22e1309b84004[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:17:59 2023 -0400
+
+    Update README.md
+
+[33mcommit 87a6fd51bb78bf79343466c095518f17e57e0e30[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:17:40 2023 -0400
+
+    Update README.md
+
+[33mcommit 1726e9be81a45ec5534c42fb51fc32c4ae306097[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:17:23 2023 -0400
+
+    Update README.md
+
+[33mcommit fb4a8c30963d8f265f38c54b033f0ad68405638d[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:16:43 2023 -0400
+
+    Update README.md
+
+[33mcommit 528e310b05fa9389aa02c1b50fa549c3fcf6bd6a[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:16:26 2023 -0400
+
+    Update README.md
+
+[33mcommit f08f05019442ecda22b511ab4a587302c46b7b83[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:15:37 2023 -0400
+
+    Update README.md
+
+[33mcommit 428a5ed4d5982bd52d184d30613236953b4c5e43[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:15:27 2023 -0400
+
+    Update README.md
+
+[33mcommit a1b740868836578bc1858a4b962609a875e9f9af[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:14:43 2023 -0400
+
+    Update README.md
+
+[33mcommit 23be854b5df4425acbc4df3b5e9def85e7f5a873[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:14:27 2023 -0400
+
+    Update README.md
+
+[33mcommit 751c5618abd09d18f6a149c397ed99b33c04e531[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:12:12 2023 -0400
+
+    Update README.md
+
+[33mcommit 754c3fec724a4cb4c986bb9f1b6baa217534293c[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:11:36 2023 -0400
+
+    Update README.md
+
+[33mcommit 76681ce9d3ce1d31d87530e784f4fef586841f3b[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Mon Jun 5 12:11:05 2023 -0400
+
+    Update README.md
+
+[33mcommit c65d33468c9876259b9deb63db89dbe232ee4c07[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Sun Jun 4 22:52:25 2023 -0400
+
+    Update README.md
+
+[33mcommit 3aabd91f6b3fdfd8decb971ed3b4120818c7ee2e[m
+Merge: c8e8da88 b223175c
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:50:18 2023 -0400
+
+    Merge branch 'main' of https://github.com/AndreMicael/Portfolio_Dev
+
+[33mcommit c8e8da88683d3aaf5474dddd2ef693bfe793d24c[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:50:01 2023 -0400
+
+    read me atualizado
+
+[33mcommit b223175cb76e065706d6a61c5882a6997c82df20[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Sun Jun 4 22:48:51 2023 -0400
+
+    Update README.md
+
+[33mcommit 55d9cdd02ef74b9ce2076b582bed837021865bec[m
+Author: André Sampaio <49279300+AndreMicael@users.noreply.github.com>
+Date:   Sun Jun 4 22:48:35 2023 -0400
+
+    Update README.md
+
+[33mcommit 72fc91fbe066b5789edb4720468b40c4bf1c9d1f[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:47:52 2023 -0400
+
+    readme criado
+
+[33mcommit 43567644f1889fa40ffc941de33f209d448fe2d7[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:38:03 2023 -0400
+
+    Novo nome para o repositorio
+
+[33mcommit d12c68fd847908cf0af9b2c1c0125bed319fd003[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:34:16 2023 -0400
+
+    teste
+
+[33mcommit c993cc3fe1e5aabba890996232d1c2e2ba6f1ae1[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:19:48 2023 -0400
+
+    Criação do App
+
+[33mcommit e56b528e7e49f4ade4fabd3ae9a8cf16ba4d4d2e[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 22:04:53 2023 -0400
+
+    Arquivo App Criado Com Sass
+
+[33mcommit 220993c7caed36da4dd4e71aef97f5834dc40620[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 21:58:35 2023 -0400
+
+    app criado com sass
+
+[33mcommit 36cd784f8ca9f641783a9c82802cfaa9f34a5a8e[m
+Author: AndreMicael <andremicael@gmail.com>
+Date:   Sun Jun 4 21:27:00 2023 -0400
+
+    Initialize project using Create React App
