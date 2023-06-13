@@ -1,7 +1,9 @@
 import React from 'react';
+import './about.scss'
+
 function About() {
     return (  
-<div>
+<div className='about--container'>
     
      <h1> Sobre Mim </h1> 
 
@@ -19,4 +21,3 @@ Reprehenderit anim occaecat in ullamco dolor sint incididunt ex. Laboris et magn
 export default About;
 
 
-<h1></h1>

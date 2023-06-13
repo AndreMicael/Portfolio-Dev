@@ -1,9 +1,10 @@
 import React from 'react';
+import './Contacts.scss'
 
 function Contacts() {
     return ( 
 
-        <section>
+        <section className='contact--container'>
             <h1>Contatos</h1>
             <p>Fugiat officia fugiat mollit commodo. </p>
         </section>

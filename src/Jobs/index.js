@@ -1,9 +1,10 @@
 import React from 'react';
+import './jobs.scss'
 
 function Jobs() {
     return ( 
 
-        <section>
+        <section className='jobs--container'>
 
 
         <h1> Experiências </h1>
