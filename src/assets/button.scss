@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'coolvetica_rg';
+    src: url('../fonts/coolvetica_rg-webfont.woff') format('woff2'),
+         url('../fonts/coolvetica_rg-webfont.woff') format('woff') ;
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+  $font-primary: 'coolvetica_rg';
+
+.home--button {
+                
+    width:  35%;
+    height: 25%;
+    margin: 0 auto;
+
+    button {
+        border: 3px solid #000;
+        width: 35%;
+        height: 28%;
+        margin-top: 20%;
+        font-size: 25px;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-weight: 400;
+        box-shadow: 5px 5px #000;
+        cursor: pointer;
+        letter-spacing: 5px;
+        background-color: transparent;
+    }
+    button:hover {
+        transform: scale(110%);
+        transition: transform 0.1s ease;
+    }
+}

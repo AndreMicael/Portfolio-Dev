@@ -9,23 +9,24 @@
   $font-primary: 'coolvetica_rg';
 
 .home--container {
-
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-   // border: 1px dashed lime;
     width: 100vw;
-    overflow-x: hidden;
+   
     height: 85vh;
+    
 
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
         .logo--side {
-            border: 1px solid red;
+            
             width: 15vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            flex-wrap: wrap;
 
             @keyframes rotate-logo {
               from {
@@ -57,12 +58,12 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            border: 1px solid navy;
+            
             width: 85vw;
             padding: 3%;           
                                 
             .info--text{
-               // border: 1px solid orange;
+              
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
@@ -72,7 +73,7 @@
                
 
                 .info--column{
-                 //   border: 1px solid rgb(253, 0, 253);
+              
                     display: flex;
                     flex-direction: column;
                     height: 80%;
@@ -114,7 +115,7 @@
                     }
 
                      .button--git {
-                       // border: 1px solid red;
+                     
                         width: 33%;
                         display: flex;
                         flex-direction: column;
@@ -123,30 +124,30 @@
 
                         img {
                             width: 30%;
-                         //   border: 1px solid red;
+                      
                             margin: 0 auto;
                         }
                     }
 
                     .button--linkedin {
-                    //    border: 1px solid red;
+                   
                         width: 33%;
 
                         img {
                             width: 30%;
-                          //  border: 1px solid red;
+                          
                             margin: 0 auto;
                         }
                         
                     }
 
                     .button--cv {
-                     //  border: 1px solid red;
+                   
                         width: 33%;
 
                         img {
                             width: 30%;
-                         //  border: 1px solid red;
+                       
                             margin: 0 auto;
                         }
                         
@@ -248,13 +249,11 @@
             //    border: 1px solid navy;
                 width: 60%;
                 align-self: flex-end;
-                
-                
-                
-                
-
+              
             }
+            
         }
 
 
 }
+
