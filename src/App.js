@@ -1,11 +1,15 @@
+
+import React, {useState} from 'react';
 import './App.scss';
 import Home from './Home'
-import DarkMode from './Navbar/darkMode';
 import Navbar from './Navbar';
+import About from './About-me';
+import Jobs from './Jobs';
+import Projects from './Projects'
+import Contacts from './Contacts'
 import LogoReactLight from './img/logo.svg'
 import LogoReactDark from './img/logo2.svg'
-import React from 'react';
-import { useState } from 'react';
+import DarkMode from './Navbar/darkMode';
 
 
 function App(props) {
@@ -39,6 +43,10 @@ function App(props) {
       <Home>  
       <img className='logo-react' src={logoChange} alt="Logo-React-Animado"></img>    
       </Home>
+      <About> </About>
+      <Jobs>  </Jobs>
+      <Projects> </Projects>
+      <Contacts> </Contacts>
 
      
       
