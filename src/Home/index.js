@@ -81,8 +81,13 @@ function Home(props) {
           </div>
 
           
+          <button>Contato
+        
+        </button>
+          
 
         </section>
+        
 
         
      );
