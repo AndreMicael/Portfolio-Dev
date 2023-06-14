@@ -12,6 +12,7 @@ import LogoReactDark from './img/logo2.svg'
 import DarkMode from './Navbar/darkMode';
 
 
+
 function App(props) {
 
   let [darkMode, setDarkMode] = useState('modo-claro');   
@@ -42,6 +43,9 @@ function App(props) {
       <Navbar> <DarkMode> <div className='button-container--app' onClick={changeMode}></div> </DarkMode> </Navbar>
       <Home>  
       <img className='logo-react' src={logoChange} alt="Logo-React-Animado"></img>    
+      
+    
+
       </Home>
       <About> </About>
       <Jobs>  </Jobs>

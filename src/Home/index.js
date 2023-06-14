@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.scss';
 import Balloons from './Balloons';
 import GitHub from '../img/github.png';
@@ -12,6 +12,7 @@ import Botao from '../assets/button';
 
 function Home(props) {
   
+    
     const gitOpen = () => {
         window.open('https://github.com/AndreMicael', '_blank');
         window.focus()
@@ -37,13 +38,17 @@ function Home(props) {
         })
     }
 
+    const LogoReact = props.children;
+
+
+
 
 
     return ( 
 
         <section className='home--container no-select'>           
           <div className='logo--side'>          
-           {props.children}           
+           {LogoReact}           
           </div>
           <div className='info--side'> 
            <div className='info--text'>               
@@ -52,7 +57,7 @@ function Home(props) {
                
                <div onClick={gitOpen} className='button--git'>            
 
-                   <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons>
+                  <div>  <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons></div>
                    <img src={GitHub} alt="GitHub"></img>
                   </div>
                   

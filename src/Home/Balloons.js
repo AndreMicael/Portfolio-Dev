@@ -1,11 +1,23 @@
-import React from 'react';
+import React  from 'react';
+
+
+
 
 function Balloons(props) {
-    return ( 
 
+    const Baloes = (
         <div className='baloes sb8'>
-            {props.children}        
+          {props.children}        
         </div>
+      );
+
+
+
+
+    return ( 
+        
+        <div className='esconder--baloes'> {Baloes}</div>
+       
 
      );
 }
