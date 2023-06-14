@@ -10,30 +10,17 @@ import Contacts from './Contacts'
 import LogoReactLight from './img/logo.svg'
 import LogoReactDark from './img/logo2.svg'
 import DarkMode from './Navbar/darkMode';
+import { useContext } from 'react';
+import { ThemeContext } from './Context/ThemeContext';
+
 import Grids from './assets/grids';
 
 
 
+function App() {
 
-function App(props) {
-
-  let [darkMode, setDarkMode] = useState('modo-claro');   
-  let [logoChange, setLogoChange] = useState(LogoReactLight);    
- 
-  
-
-  const changeMode = () =>  {
-          if (darkMode === 'modo-claro'){
-            setDarkMode('modo-escuro');
-            setLogoChange(LogoReactDark);
-                    
-          }
-          else  {
-            setDarkMode('modo-claro');
-            setLogoChange(LogoReactLight);
-            
-          }
-    }   
+  const {theme, toggleTheme,toggleLogo,logoToggle} = useContext(ThemeContext)
+    
   
 
   return (
@@ -41,13 +28,13 @@ function App(props) {
     <div className="App"> 
  
     
-    <Grids> </Grids>
-    <div className={darkMode}>
+     <Grids> </Grids>  
+    <div>
+ 
 
-
-      <Navbar> <DarkMode> <div className='button-container--app' onClick={changeMode}></div> </DarkMode> </Navbar>
+      <Navbar> <DarkMode> <div className='button-container--app'></div> </DarkMode> </Navbar>
       <Home>  
-      <img className='logo-react' src={logoChange} alt="Logo-React-Animado"></img>    
+      <img className='logo-react' src={logoToggle} alt="Logo-React-Animado"></img>    
       
     
 

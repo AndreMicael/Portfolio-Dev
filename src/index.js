@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Rotas from './Pages/Rotas';
 import Contacts from './Pages/Contact';
 import Projects from './Pages/Projects';
+import { ThemeProvider } from './Context/ThemeContext';
 
 const router = createBrowserRouter([
     {
@@ -22,13 +23,15 @@ const router = createBrowserRouter([
     },
 ]);
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-
-      
-    </RouterProvider>
+    <ThemeProvider>
+      <RouterProvider router={router}/>    
+    </ThemeProvider>
+   
   </React.StrictMode>
 );
 
