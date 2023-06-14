@@ -14,6 +14,7 @@ import Grids from './assets/grids';
 
 
 
+
 function App(props) {
 
   let [darkMode, setDarkMode] = useState('modo-claro');   
@@ -38,6 +39,8 @@ function App(props) {
   return (
 
     <div className="App"> 
+ 
+    
     <Grids> </Grids>
     <div className={darkMode}>
 
@@ -57,6 +60,7 @@ function App(props) {
      
       
       </div>
+     
     </div>
   );
 }
