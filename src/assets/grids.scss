@@ -1,0 +1,23 @@
+.grid--container {
+    
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - (0.66% ) );
+    height: 500vh;
+    z-index: 10000;
+    gap: 0.33%;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+    div {
+      
+        background-color: rgba($color: #ee0505, $alpha: 0.3);
+        color: transparent;
+    }
+
+    }
+    

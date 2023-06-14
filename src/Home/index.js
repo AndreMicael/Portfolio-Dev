@@ -5,7 +5,7 @@ import GitHub from '../img/github.png';
 import Linkedin from '../img/linkedin.png';
 import Resume from '../img/resume.png';
 import Curriculo from '../files/CV_André_Micael_Sampaio_Pinto.pdf';
-import Botao from '../assets/button';
+
 
 
 
@@ -46,7 +46,7 @@ function Home(props) {
 
     return ( 
 
-        <section className='home--container no-select'>           
+        <section className='home--container no-select '>           
           <div className='logo--side'>          
            {LogoReact}           
           </div>
@@ -83,11 +83,11 @@ function Home(props) {
                <h1> Developer </h1>
                <p className='info--description'> Tenho 25 anos, sou desenvolvedor com experiência em React, HTML, CSS para aplicações Web.</p>
            </div>
-         
-         <Botao> Contato </Botao>
-        
+       
+          
           </div>
-
+       
+         
         </section>
 
 

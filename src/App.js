@@ -10,6 +10,7 @@ import Contacts from './Contacts'
 import LogoReactLight from './img/logo.svg'
 import LogoReactDark from './img/logo2.svg'
 import DarkMode from './Navbar/darkMode';
+import Grids from './assets/grids';
 
 
 
@@ -37,6 +38,7 @@ function App(props) {
   return (
 
     <div className="App"> 
+    <Grids> </Grids>
     <div className={darkMode}>
 
 

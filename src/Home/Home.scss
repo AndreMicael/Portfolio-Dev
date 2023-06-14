@@ -8,14 +8,18 @@
 
   $font-primary: 'coolvetica_rg';
 
+  :root {
+    font-size: 22px;
+  }
+
 .home--container {
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-   
-    height: 85vh;
+ 
+    height: 60vh;
     
 
 
@@ -27,6 +31,7 @@
             flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
+            
 
             @keyframes rotate-logo {
               from {
@@ -58,17 +63,16 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            
+            border: 1px solid red;
             width: 85vw;
             padding: 3%;           
                                 
             .info--text{
               
                 display: flex;
-                flex-direction: column;
-                margin: 0 auto;
-                padding: 4%;
-                width: 86%;
+                flex-direction: column;               
+                padding: 5% 5% 5% 6%;
+                width: 90%;
                 transform: scale(120%);
                
 
@@ -96,11 +100,12 @@
 
                 .info--button {
                     
-                    width: 55%;
+                    width: 60%;
                     display: flex;
                     flex-direction: row;
                     padding: 10px;
                     justify-content: space-around;
+                    border: 1px solid red;
 
                
                     .button--text{
@@ -219,14 +224,14 @@
             h1 {
                 font-family: $font-primary ;
                 font-weight: 400;
-                font-size: 12vw;
+                font-size: 10rem;
                 text-transform: uppercase;
                 padding: 0;               
-            //    border: 1px solid #0ef02186;
+                border: 1px solid #0ef02186;
                 text-align: left;
                 width: 100%;
                 line-height: 10vw;
-                letter-spacing: 4px;
+                letter-spacing: 0.3rem;
                 
             }
 
@@ -236,19 +241,21 @@
                 font-size: 5vw;
                 text-transform: uppercase;
                 padding: 0;
-               // border: 1px solid navy;
+                border: 1px solid navy;
                 text-align: left;
                 width: 100%;
                 line-height: 4.5vw;
+                letter-spacing: 0.1rem;
                
                 
                
             }
             .info--description{
                 text-align: right;
-            //    border: 1px solid navy;
+                border: 1px solid navy;
                 width: 60%;
                 align-self: flex-end;
+                padding-right: 0.33%;
               
             }
             
