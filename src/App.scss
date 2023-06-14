@@ -86,12 +86,25 @@ body{
           filter: invert(1);
         }
         .home--button button {
-          filter: invert(1);
+
+          border-color:  #61b8bb;
+          border-width: 4px;
+          background-color: transparent;
+          box-shadow: none;
+          color: white;
+        
+          
+          
+        }
+        .home--button button:hover {
+         
           border-color:  #61b8bb;
           border-width: 3px;
           background-color: $color-primary-dark;
           box-shadow: none;
           color: rgb(37, 37, 37);
+          transform: scale(105%) !important;
+          
           
         }
 
