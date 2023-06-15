@@ -1,0 +1,43 @@
+
+.footer--container{
+
+    width: 66.67vw;
+    margin: 0 auto;
+    height: 10vw;
+    margin-top: 5vw;
+    
+    hr {
+        width: 50vw;
+        margin: 0 auto;
+        border-color: rgba($color: #dedede, $alpha: 0.5);
+        box-shadow: 2px 2px 10px rgba($color: #dedede, $alpha: 0.2);
+        
+    }
+   
+
+    img {
+        
+        width: 45px;
+        object-fit:contain;
+        margin: 10px 10px 10px 5px;
+        
+    }
+    p {
+        
+        height: 45px;
+        margin: 10px 10px 10px 5px;
+        padding: 10px;
+     
+    }
+
+    .footer-icons {
+       
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+      
+
+    }
+}
