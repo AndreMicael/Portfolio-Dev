@@ -10,38 +10,28 @@ import Contacts from './Contacts'
 import DarkMode from './Navbar/darkMode';
 import { useContext } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
-
-
-
+import Grids from './assets/grids'
 
 function App() {
 
   const {logoToggle} = useContext(ThemeContext)
   document.title = 'Página Inicial | Portfólio André Sampaio';
   
-
   return (
 
     <div className="App"> 
 
-      {/* <Grids> </Grids>    */}
+       {/* <Grids> </Grids>     */}
     <div>
  
-
       <Navbar> <DarkMode> <div className='button-container--app'></div> </DarkMode> </Navbar>
       <Home>  
-      <img className='logo-react' src={logoToggle} alt="Logo-React-Animado"></img>    
+      <img className='logo-react' src={logoToggle} alt="Logo-React-Animado"></img></Home>   
+      <About/> 
+      <Projects/>
+      <Contacts/> 
       
-    
-
-      </Home>
-      <About> </About>
-    
-      <Projects> </Projects>
-      <Contacts> </Contacts>
-      <Jobs>  </Jobs>
-     
-      
+           
       </div>
      
     </div>

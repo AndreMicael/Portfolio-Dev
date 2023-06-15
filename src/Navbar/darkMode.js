@@ -14,7 +14,6 @@ function DarkMode(props) {
     const {theme, toggleTheme,toggleLogo} = useContext(ThemeContext);
 
 
-    
 
     const handleClick = () => {
         setcircleToggle(!circleToggle);
