@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Home.scss';
 import Balloons from './Balloons';
 import GitHub from '../img/github.png';

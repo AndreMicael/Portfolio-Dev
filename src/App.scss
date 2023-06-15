@@ -15,8 +15,28 @@ $color-secondary-dark: rgb(37, 37, 37);
   font-style: normal; 
 }
 
+/* Estilizando a scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da scrollbar */
+  position: absolute;
+  right: 50px;
+}
+
+/* Estilizando o thumb da scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* Cor do thumb */
+  border-radius: 5px; /* Borda arredondada do thumb */
+}
+
+/* Estilizando o thumb da scrollbar quando hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do thumb em hover */
+}
+
+
 body{
   font-family: $font-secondary;
+  
   
  
 }
@@ -78,6 +98,10 @@ body{
       color: #fff;
       transition: background-color 0.5s ease;
 
+      
+  
+
+      
         li {
           filter: invert(1);
         }
@@ -128,7 +152,6 @@ body{
           filter: invert(1);
           content: "";
           width: 0px;
-          
           height: 0px;
           position: absolute;
           border-left: 10px solid transparent;
@@ -164,9 +187,14 @@ body{
         height: 35px;
         border-radius: 20px;    
         display: flex;
-        flex-direction: row;    
+        flex-direction: row;   
+         
                
     }
+
+
+
+
     
     
 }
