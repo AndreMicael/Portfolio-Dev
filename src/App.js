@@ -20,15 +20,15 @@ import Grids from './assets/grids';
 function App() {
 
   const {theme, toggleTheme,toggleLogo,logoToggle} = useContext(ThemeContext)
-    
+  document.title = 'Página Inicial | Portfólio André Sampaio';
   
 
   return (
 
     <div className="App"> 
  
-    
-     {/* <Grids> </Grids>   */}
+
+      <Grids> </Grids>   
     <div>
  
 

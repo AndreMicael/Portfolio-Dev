@@ -21,7 +21,7 @@ function Navbar(props) {
             <ul>
                 <li> <Link to="/"><a className='animacao-underline' href='http://www.google.com'>Inicio</a> </Link>  </li>
                 <li> <a className='animacao-underline' href='http://www.google.com'>Habilidades</a> </li>
-                <li> <a className='animacao-underline' href='http://www.google.com'>Experiencias</a> </li>
+                <li> <a className='animacao-underline' href='http://www.google.com'>Experiências</a> </li>
                 <li> <Link to="/projects"> <a className='animacao-underline' href='http://www.google.com'>Projetos</a> </Link> </li>
                 <li> <Link to="/contacts"><a className='animacao-underline' href='http://www.google.com'>Contatos</a></Link> </li>
 
