@@ -132,8 +132,7 @@ $color-secondary-dark: rgb(37, 37, 37);
       div {
         display: flex;
          flex-direction: row;
-        padding: 2px !important;  
-       
+        padding: 2px !important;         
         margin-left: 40px;
         margin-top: 2px;
 
@@ -164,10 +163,13 @@ $color-secondary-dark: rgb(37, 37, 37);
   .skills  {
     
    
-    display:grid ;
-   
-    column-gap: 2.8vw;
-    row-gap: 2vw;
+    display:grid ;   
+    column-gap: 0.8vw;
+    row-gap: 0.8vw;
+
+    .icon {
+     
+    }
    
 
     ul {
@@ -202,7 +204,6 @@ $color-secondary-dark: rgb(37, 37, 37);
         h5{
           border-left: 2px solid #3f3f3f;
           padding-left: 15px;
-          
           font-weight: 400;
           color: #3f3f3f;
           margin-left: 15px;
@@ -214,4 +215,169 @@ $color-secondary-dark: rgb(37, 37, 37);
   }
 
 } } 
+
+
+
+@media (min-width: 768px) {
+
+  .about--container {
+
+    width: 80vw;
+    flex-direction: row;
+  
+    .gap20 {
+      margin-top:15vh;
+    }
+  
+    .about--img{
+      width: 20%;
+      height: 15vw;
+      border: 3px solid #000;
+     
+     
+  
+      img {
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+  
+       
+      }
+  
+    }
+  
+    .about--text {
+      width: 100%;
+      padding: 0px;
+  
+      h1 {
+       
+        margin-bottom: 25px;
+        margin-top: 20px;
+      }
+     
+  
+    }
+   
+  
+  .skills--section {
+    
+    width: 80vw;
+    margin-top: 7%;
+   
+    display: flex;
+    flex-direction: column;
+    
+  
+    hr{
+      width: 80%;
+      margin: 0 auto;
+      border-color: rgba($color: #959595, $alpha: 0.1);
+      margin-bottom: 30px;
+      margin-top: 30px;
+    
+    }
+    h1{
+      margin-top: 0px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+  
+   
+  
+  .container--skills {
+   
+    list-style: none;
+    width: 80vw;
+    margin-bottom: 20px;
+  
+   
+    
+    .skills  {
+      
+     
+      display:grid ;
+      grid-template-columns: 16vw 16vw 16vw;
+      column-gap: 11vw;
+      row-gap: 3vw; 
+     
+     
+     
+  
+      ul {
+      
+        width: 26vw;
+        text-align: left;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: row;
+        
+        background-color: rgba($color: #dedede, $alpha: 0.2);
+       
+        
+        
+        
+  
+      
+        div {
+          display: flex;
+           flex-direction: row;
+          padding: 2px !important;         
+          margin-left: 10px;
+          margin-top: 2px;
+          
+        }
+     
+       
+      }
+    }
+  
+  } }  
+  
+  .container--skills-column {
+   
+    .skills  {
+      
+      .icon {
+       
+      }
+     
+  
+      ul {
+      
+        div {
+          display: flex;
+           flex-direction: row;
+          padding: 2px !important;  
+        
+          margin-left: 8px;
+          margin-top: 2px;
+                
+         
+        }
+        p{
+         
+          padding: 2px;
+          line-height: 150%;
+          margin-left: 10px;
+          display: flex;
+  
+          h5{
+            border-left: 2px solid #3f3f3f;
+            padding-left: 15px;
+            font-weight: 400;
+            color: #3f3f3f;
+            margin-left: 15px;
+          }
+        }
+  
+       
+      }
+    }
+  
+  } } 
+  
+
+
+}
 

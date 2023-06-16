@@ -40,7 +40,6 @@ function About() {
 
 Laboris exercitation velit enim ea mollit aute do esse proident eiusmod est exercitation reprehenderit id. Cillum do aliqua irure dolor sunt officia magna adipisicing. Consequat sunt proident amet labore enim eiusmod pariatur do anim proident eiusmod dolore ut Lorem. Excepteur nisi magna deserunt exercitation consectetur sint excepteur ea non voluptate. Est velit Lorem consequat minim. Aliquip in sunt anim commodo.
 
-Ipsum sit non ullamco ullamco labore incididunt dolore sint tempor amet dolor velit ea. Excepteur aliquip aute reprehenderit excepteur laboris. Nisi deserunt sit anim do sunt commodo est aliquip sit. Laboris occaecat dolore aliqua culpa voluptate eu ea eiusmod magna cillum veniam. Ex consequat velit consectetur esse aliquip culpa aliqua tempor duis aliqua enim est. Commodo aute aute consectetur sunt dolore fugiat do proident et nulla id nostrud sint voluptate.
 </p>
         </div>
 

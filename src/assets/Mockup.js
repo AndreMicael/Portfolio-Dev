@@ -4,11 +4,11 @@ import './mockup.scss'
 const Mockup = (props) => {
   
   return (
-    <div className={`container ${props.position}`}>    {/* add row */}
+    <div className={`container--projects ${props.position}`}>    {/* add row */}
     <div className='mockup--side'>
     <img src={props.thumb} alt={`${props.title} - thumbnail `}></img>
        </div>
-    <div className='info--side'> 
+    <div className='info--sider'> 
     
     <h4> {props.title} </h4>
     <p>{props.description}</p>

@@ -1,277 +1,709 @@
 @font-face {
-    font-family: 'coolvetica_rg';
-    src: url('../fonts/coolvetica_rg-webfont.woff') format('woff2'),
-         url('../fonts/coolvetica_rg-webfont.woff') format('woff') ;
+    font-family: "coolvetica_rg";
+    src: url("../fonts/coolvetica_rg-webfont.woff") format("woff2"),
+      url("../fonts/coolvetica_rg-webfont.woff") format("woff");
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
   }
-
-  $font-primary: 'coolvetica_rg';
-
+  
+  $font-primary: "coolvetica_rg";
+  
   :root {
     font-size: 22px;
   }
-
-.home--container {
-    
+  
+  .home--container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    
-   
-    height: 60vh;
-    
-
-
+    height: 70vh;
+  
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
-        .logo--side {
-            
-            width: 15vw;
+    .logo--side {
+      width: 15vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      @keyframes rotate-logo {
+        from {
+          transform: scale(350%) translateX(-16%) rotate(0deg);
+        }
+  
+        to {
+          transform: scale(350%) translateX(-16%) rotate(360deg);
+        }
+      }
+  
+      img {
+        width: 100%;
+        transform: scale(350%) translateX(-16%);
+        padding: 0;
+        animation: rotate-logo 180s linear 15s infinite normal;
+        -moz-animation: rotate-logo 180s linear 15s infinite normal;
+        -ms-animation: rotate-logo 180s linear 15s infinite normal;
+        -o-animation: rotate-logo 180s linear 15s infinite normal;
+        -webkit-animation: rotate-logo 180s linear 15s infinite normal;
+      }
+    }
+  
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      display: flex !important;
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+      width: 85vw;
+      padding: 3%;
+  
+      .info--text {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 6%;
+        width: 78%;
+        transform: scale(120%);
+  
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          height: 80%;
+  
+          p {
+            text-transform: uppercase;
+            padding: 0;
+            text-align: left;
+            font-size: 20px;
+          }
+        }
+      }
+  
+      .info--line {
+        display: flex;
+        align-self: stretch;
+        align-items: flex-end;
+  
+        .info--button {
+          width: 40vw;
+          display: flex;
+          flex-direction: row;
+          padding: 8px;
+          justify-content: space-around;
+          //   border: 1px solid rgb(232, 123, 123);
+  
+          .button--text {
+            text-align: center;
+          }
+  
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+  
+          .button--git {
+            width: 25%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            
-
-            @keyframes rotate-logo {
-              from {
-                    transform:scale(350%) translateX(-16%) rotate(0deg);
-                } to {
-                    transform:scale(350%) translateX(-16%) rotate(360deg);
-                }
-                
-           }
-
+            //    border: 1px solid red;
+            padding: 0;
+  
             img {
-
-                width: 100%;
-                transform: scale(350%) translateX(-16%);
-                padding: 0;
-                animation: rotate-logo 180s linear 15s infinite normal;
-                -moz-animation: rotate-logo 180s linear 15s infinite normal;
-                -ms-animation: rotate-logo 180s linear 15s infinite normal;
-                -o-animation: rotate-logo 180s linear 15s infinite normal;
-                -webkit-animation: rotate-logo 180s linear 15s infinite normal;
-                 
+              width: 30%;
+  
+              margin: 0 auto;
             }
-
-           
-
+          }
+  
+          .button--linkedin {
+            width: 25%;
+  
+            img {
+              width: 30%;
+  
+              margin: 0 auto;
+            }
+          }
+  
+          .button--cv {
+            width: 25%;
+  
+            img {
+              width: 30%;
+  
+              margin: 0 auto;
+            }
+          }
+  
+          .baloes {
+            width: 100%;
+            height: 80px;
+            margin: 0px auto;
+            border: 4px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(70%);
+            text-transform: uppercase;
+            font-weight: bold;
+  
+            p {
+              margin-top: 8px;
+            }
+          }
+  
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+  
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
         }
-    ////Todas as estilizações dos textos e links do lado direito da página Home. 
-        .info--side {
+      }
+  
+      h1 {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 10rem;
+        text-transform: uppercase;
+        padding: 0;
+        //   border: 1px solid #0ef02186;
+        text-align: left;
+        width: 100%;
+        line-height: 10vw;
+        letter-spacing: 0.25rem;
+      }
+  
+      h2 {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 3.7vw;
+        text-transform: uppercase;
+        padding: 0;
+        //  border: 1px solid navy;
+        text-align: left;
+        width: 100%;
+        line-height: 4.5vw;
+        letter-spacing: 0.1rem;
+      }
+      p {
+        text-transform: uppercase;
+        padding: 0;
+        text-align: left;
+        font-size: 20px;
+      }
+      .info--description {
+        text-align: right;
+        //border: 1px solid navy;
+        width: 50%;
+        align-self: flex-end;
+        padding-right: 0.33%;
+        margin-right: 7vw;
+      }
+    }
+  }
+  
+  .esconder {
+    visibility: hidden;
+  }
+  
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .home--container {
+      margin-bottom: 0%;
+  
+      width: 90vw;
+      height: 90vw;
+      margin: 0 auto;
+  
+      //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+      .logo--side {
+        display: none;
+      }
+  
+      ////Todas as estilizações dos textos e links do lado direito da página Home.
+      .info--side {
+        transform: scale(100%);
+        margin: 0 auto;
+        width: 100%;
+  
+        .info--text {
+          width: 80%;
+  
+          margin: 0 auto;
+  
+          .info--column {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-          //  border: 1px solid red;
-            width: 85vw;
-            padding: 3%;           
-                                
-            .info--text{
-              
-                display: flex;
-                flex-direction: column;               
-                padding: 5% 5% 5% 6%;
-                width: 90%;
-                transform: scale(120%);
-               
-
-                .info--column{
-              
-                    display: flex;
-                    flex-direction: column;
-                    height: 80%;
-                    
-                }
-               
-            
-            }
-           
-            
-            .info--line{
-                
-                display: flex;
-                align-self: stretch; 
-                align-items: flex-end;
-
-
-               
-
-
-                .info--button {
-                    
-                    width: 40vw;
-                    display: flex;
-                    flex-direction: row;
-                    padding: 8px;
-                    justify-content: space-around;
-                 //   border: 1px solid rgb(232, 123, 123);
-
-               
-                    .button--text{
-                        text-align: center;
-                    }
-
-                    .button--git:hover, .button--linkedin:hover, .button--cv:hover                    
-                    {
-                        transform: scale(110%);
-                        transition: transform 0.1s ease;
-                        cursor: pointer;
-                    }
-
-                     .button--git {
-                     
-                        width: 25%;
-                        display: flex;
-                        flex-direction: column;
-                    //    border: 1px solid red;
-                        padding: 0;
-                              
-                        
-
-                        img {
-                            width: 30%;
-                      
-                            margin: 0 auto;
-                        }
-                    }
-
-                    .button--linkedin {
-                   
-                        width: 25%;
-
-                        img {
-                            width: 30%;
-                          
-                            margin: 0 auto;
-                        }
-                        
-                    }
-
-                    .button--cv {
-                   
-                        width: 25%;
-
-                        img {
-                            width: 30%;
-                       
-                            margin: 0 auto;
-                        }
-                        
-                    }
-
-                   
-
-                    .baloes {
-                        
-                        width: 100%;
-                        margin: 0px auto;
-                        border: 3px solid #000000;
-                        padding: 5px;
-                        text-align: center;
-                        position: relative;
-                        transform: scale(70%);
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        
-                      }
-                 
-                      
-                        .sb8:before {
-                            content: "";
-                            width: 0px;
-                            height: 0px;
-                            position: absolute;
-                            border-left: 10px solid transparent;
-                            border-right: 10px solid #000000;
-                            border-top: 10px solid #000000;
-                            border-bottom: 10px solid transparent;
-                            right: 20px;
-                            bottom: -23px;
-                            transform: rotate(270deg);
-                            
-                        }
-                        
-                        .sb8:after {
-                            content: "";
-                            width: 0px;
-                            height: 0px;
-                            position: absolute;
-                            border-left: 10px solid transparent;
-                            border-right: 10px solid rgba(255, 255, 255,0);
-                            border-top: 10px solid rgba(255, 255, 255,0);
-                            border-bottom: 10px solid transparent;
-                            right: 17px;
-                            bottom: -15px;
-                            transform: rotate(270deg);
-                        }
-
-
-
-                }
-    
-
-                
-            }
-
-            
-
-            p {
-                text-transform: uppercase;
-                padding: 0;
-                text-align: left;
-                font-size: 20px;
-               
-                
-            }
-            h1 {
-                font-family: $font-primary ;
-                font-weight: 400;
-                font-size: 10rem;
-                text-transform: uppercase;
-                padding: 0;               
-             //   border: 1px solid #0ef02186;
-                text-align: left;
-                width: 100%;
-                line-height: 10vw;
-                letter-spacing: 0.25rem;
-                
-            }
-
-            h2 {
-                font-family: $font-primary ;
-                font-weight: 400;
-                font-size: 3.7vw;
-                text-transform: uppercase;
-                padding: 0;
-             //  border: 1px solid navy;
-                text-align: left;
-                width: 100%;
-                line-height: 4.5vw;
-                letter-spacing: 0.1rem;
-                
-               
-                
-               
-            }
-            .info--description{
-                text-align: right;
-               // border: 1px solid navy;
-                width: 50%;
-                align-self: flex-end;
-                padding-right: 0.33%;
-               
-                margin-right: 7vw;
-              
-            }
-            
+            width: 100%;
+          }
         }
-
-
-}
-
-.esconder {
-    visibility: hidden;
-}
+  
+        .info--line {
+          flex-direction: column-reverse;
+          width: 100% !important;
+          margin: 0 auto;
+  
+          .info--button {
+            justify-content: space-around;
+            width: 100%;
+  
+            .button--text {
+              text-align: center;
+              font-size: 16px;
+            }
+  
+            .button--git:hover,
+            .button--linkedin:hover,
+            .button--cv:hover {
+              transform: scale(110%);
+              transition: transform 0.1s ease;
+              cursor: pointer;
+            }
+  
+            .button--git,
+            .button--linkedin,
+            .button--cv {
+              width: 35%;
+              margin: 3px;
+  
+              p {
+                margin: 0 auto;
+                margin-top: 5px;
+                letter-spacing: 0px;
+                font-size: 14px;
+              }
+            }
+  
+            .baloes {
+              width: 110%;
+              margin: 0px auto;
+              border: 3px solid #000000;
+              padding: 5px;
+              text-align: center;
+              position: relative;
+              transform: scale(80%);
+              text-transform: uppercase;
+              font-weight: bold;
+              height: 60px;
+            }
+  
+            .sb8:before {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid #000000;
+              border-top: 10px solid #000000;
+              border-bottom: 10px solid transparent;
+              right: 20px;
+              bottom: -23px;
+              transform: rotate(270deg);
+            }
+  
+            .sb8:after {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid rgba(255, 255, 255, 0);
+              border-top: 10px solid rgba(255, 255, 255, 0);
+              border-bottom: 10px solid transparent;
+              right: 17px;
+              bottom: -15px;
+              transform: rotate(270deg);
+            }
+          }
+        }
+  
+        p {
+          width: 100%;
+          margin-top: 10px;
+          font-size: 0.8rem;
+        }
+  
+        h1 {
+          font-size: 3.1rem;
+        }
+  
+        h2 {
+          font-size: 3rem;
+        }
+  
+        .info--description {
+          width: 100%;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .home--container {
+      margin: 0 auto;
+  
+      width: 90vw;
+      height: 60vh;
+  
+      //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+      .logo--side {
+        display: none;
+      }
+  
+      ////Todas as estilizações dos textos e links do lado direito da página Home.
+      .info--side {
+        transform: scale(100%);
+        margin-top: 5%;
+        width: 100%;
+  
+        .info--text {
+          width: 80%;
+  
+          margin: 0 auto;
+  
+          .info--column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
+  
+        .info--line {
+          flex-direction: column-reverse;
+          width: 100% !important;
+          margin: 0 auto;
+  
+          .info--button {
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 8%;
+  
+            .button--text {
+              text-align: center;
+              font-size: 16px;
+            }
+  
+            .button--git:hover,
+            .button--linkedin:hover,
+            .button--cv:hover {
+              transform: scale(110%);
+              transition: transform 0.1s ease;
+              cursor: pointer;
+            }
+  
+            .button--git,
+            .button--linkedin,
+            .button--cv {
+              width: 35%;
+  
+              p {
+                margin: 0 auto;
+                margin-top: 5px;
+              }
+            }
+  
+            .baloes {
+              width: 100%;
+              margin: 0px auto;
+              border: 3px solid #000000;
+              padding: 5px;
+              text-align: center;
+              position: relative;
+              transform: scale(80%);
+              text-transform: uppercase;
+              font-weight: bold;
+              height: 60px;
+            }
+  
+            .sb8:before {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid #000000;
+              border-top: 10px solid #000000;
+              border-bottom: 10px solid transparent;
+              right: 20px;
+              bottom: -23px;
+              transform: rotate(270deg);
+            }
+  
+            .sb8:after {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid rgba(255, 255, 255, 0);
+              border-top: 10px solid rgba(255, 255, 255, 0);
+              border-bottom: 10px solid transparent;
+              right: 17px;
+              bottom: -15px;
+              transform: rotate(270deg);
+            }
+          }
+        }
+  
+        p {
+          width: 100%;
+          margin-top: 10px;
+          font-size: 0.8rem;
+        }
+  
+        h1 {
+          font-size: 3.1rem;
+        }
+  
+        h2 {
+          font-size: 3rem;
+        }
+  
+        .info--description {
+          width: 100%;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .home--container {
+      margin-bottom: 10%;
+  
+      //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+      .logo--side {
+        visibility: hidden;
+      }
+  
+      ////Todas as estilizações dos textos e links do lado direito da página Home.
+      .info--side {
+        transform: scale(120%);
+        margin-top: 5%;
+  
+        .info--text {
+          width: 80%;
+          margin: 0 auto;
+  
+          .info--column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
+  
+        .info--line {
+          flex-direction: column-reverse;
+          width: 100% !important;
+          margin: 0 auto;
+  
+          .info--button {
+            justify-content: space-around;
+            width: 100%;
+  
+            .button--text {
+              text-align: center;
+              font-size: 16px;
+            }
+  
+            .button--git:hover,
+            .button--linkedin:hover,
+            .button--cv:hover {
+              transform: scale(110%);
+              transition: transform 0.1s ease;
+              cursor: pointer;
+            }
+  
+            .button--git,
+            .button--linkedin,
+            .button--cv {
+              width: 30%;
+            }
+          }
+        }
+  
+        p {
+          width: 100%;
+          margin-top: 10px;
+        }
+  
+        h1 {
+          font-size: 4.6rem;
+        }
+  
+        h2 {
+          font-size: 3rem;
+          margin-top: 10px;
+        }
+  
+        .info--description {
+          width: 100%;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .home--container {
+      margin-bottom: 0%;
+  
+      width: 90vw;
+      height: 70vh;
+  
+      //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+      .logo--side {
+        visibility: hidden;
+      }
+  
+      ////Todas as estilizações dos textos e links do lado direito da página Home.
+      .info--side {
+        transform: scale(100%);
+        margin-top: 5%;
+        width: 100%;
+  
+        .info--text {
+          width: 80%;
+  
+          margin: 0 auto;
+  
+          .info--column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
+  
+        .info--line {
+          flex-direction: column-reverse;
+          width: 100% !important;
+          margin: 0 auto;
+  
+          .info--button {
+            justify-content: space-around;
+            width: 100%;
+  
+            .button--text {
+              text-align: center;
+              font-size: 16px;
+            }
+  
+            .button--git:hover,
+            .button--linkedin:hover,
+            .button--cv:hover {
+              transform: scale(110%);
+              transition: transform 0.1s ease;
+              cursor: pointer;
+            }
+  
+            .button--git,
+            .button--linkedin,
+            .button--cv {
+              width: 25%;
+  
+              p {
+                margin: 0 auto;
+                margin-top: 5px;
+              }
+            }
+  
+            .baloes {
+              width: 100%;
+              margin: 0px auto;
+              border: 3px solid #000000;
+              padding: 5px;
+              text-align: center;
+              position: relative;
+              transform: scale(80%);
+              text-transform: uppercase;
+              font-weight: bold;
+              height: 60px;
+            }
+  
+            .sb8:before {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid #000000;
+              border-top: 10px solid #000000;
+              border-bottom: 10px solid transparent;
+              right: 20px;
+              bottom: -23px;
+              transform: rotate(270deg);
+            }
+  
+            .sb8:after {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid rgba(255, 255, 255, 0);
+              border-top: 10px solid rgba(255, 255, 255, 0);
+              border-bottom: 10px solid transparent;
+              right: 17px;
+              bottom: -15px;
+              transform: rotate(270deg);
+            }
+          }
+        }
+  
+        p {
+          width: 100%;
+          margin-top: 15px;
+          font-size: 0.8rem;
+        }
+  
+        h1 {
+          font-size: 5.7rem;
+        }
+  
+        h2 {
+          margin-top: -15px;
+          font-size: 3rem;
+        }
+  
+        .info--description {
+          width: 100%;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
 

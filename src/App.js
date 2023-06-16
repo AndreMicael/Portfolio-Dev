@@ -10,7 +10,7 @@ import Contacts from './Contacts'
 import DarkMode from './Navbar/darkMode';
 import { useContext } from 'react';
 import { ThemeContext } from './Context/ThemeContext';
-// import Grids from './assets/grids'
+ import Grids from './assets/grids'
 import Footer from './Footer';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
     <div className="App"> 
 
-        {/* <Grids> </Grids>      */}
+        <Grids> </Grids>    
     <div>
  
       <Navbar> <DarkMode> <div className='button-container--app'></div> </DarkMode> </Navbar>

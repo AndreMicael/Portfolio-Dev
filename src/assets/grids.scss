@@ -20,4 +20,32 @@
     }
 
     }
+
+    @media (max-width: 768px) {
+
+        .grid--container {
+    
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100vw - (0.66% ) );
+            height: 1000vh;
+            z-index: 0;
+            gap: 0.33%;
+            margin: 0 auto;
+            overflow-x: hidden;
+        
+            div {
+              
+             
+                color: transparent;
+            }
+        
+            }
+            
+
+    }
     

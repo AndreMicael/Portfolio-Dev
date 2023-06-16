@@ -46,7 +46,7 @@ function Home(props) {
 
     return ( 
 
-        <section className='home--container no-select '>           
+        <section className='home--container no-select  '>           
           <div className='logo--side'>          
            {LogoReact}           
           </div>
@@ -55,28 +55,27 @@ function Home(props) {
                <div className='info--line'> <div className='info--column'> <p> Prazer, me chamo André </p>  <h2> Front-End </h2>  </div> 
                <div className='info--button'>            
                
-               <div onClick={gitOpen} className='button--git'>            
+                    <div onClick={gitOpen} className='button--git'>            
 
-                  <div>  <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons></div>
-                   <img src={GitHub} alt="GitHub"></img>
-                  </div>
+                         <div>  <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons></div>
+                          <img src={GitHub} alt="GitHub"></img>
+                    </div>
                   
 
-               <div onClick={LinkedinOpen} className='button--linkedin'> 
-              
-               <Balloons> <p className='button--text'>Vamos nos<br/> conhecer?</p></Balloons>
-                   <img src={Linkedin} alt="Linkedin"></img>
-               
-               </div> 
+                    <div onClick={LinkedinOpen} className='button--linkedin'> 
+                    
+                    <Balloons> <p className='button--text'>Vamos nos<br/> conhecer?</p></Balloons>
+                        <img src={Linkedin} alt="Linkedin"></img>
+                    
+                    </div> 
+
                <div className='button--cv' onClick={getCurriculo}>
 
-
-     
-               
                <Balloons><p className='button--text'>Baixar Meu<br/> Curriculo  </p></Balloons>
                    <img src={Resume} alt="Curriculo"></img>
 
                 </div> 
+                
                </div>
                
                </div>
