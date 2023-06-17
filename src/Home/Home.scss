@@ -499,20 +499,25 @@
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) and (max-width: 991.98px) {
     .home--container {
-      margin-bottom: 10%;
+      margin: 0 auto;
+  
+      width: 90vw;
+      height: 66vh;
   
       //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
       .logo--side {
-        visibility: hidden;
+        display: none;
       }
   
       ////Todas as estilizações dos textos e links do lado direito da página Home.
       .info--side {
-        transform: scale(120%);
+        transform: scale(110%);
         margin-top: 5%;
+
   
         .info--text {
           width: 80%;
+  
           margin: 0 auto;
   
           .info--column {
@@ -526,14 +531,20 @@
           flex-direction: column-reverse;
           width: 100% !important;
           margin: 0 auto;
+          
   
           .info--button {
             justify-content: space-around;
             width: 100%;
+            margin-bottom: 5%;
+         
+    
   
             .button--text {
               text-align: center;
               font-size: 16px;
+              
+            
             }
   
             .button--git:hover,
@@ -547,7 +558,55 @@
             .button--git,
             .button--linkedin,
             .button--cv {
-              width: 30%;
+              width: 35%;
+  
+              p {
+                margin: 0 auto;
+                margin-top: 5px;
+             
+             
+              }
+            }
+  
+            .baloes {
+              width: 100%;
+              margin: 0px auto;
+              border: 3px solid #000000;
+              padding: 5px;
+              text-align: center;
+              position: relative;
+              transform: scale(80%);
+              text-transform: uppercase;
+              font-weight: bold;
+              height: 60px;
+            }
+  
+            .sb8:before {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid #000000;
+              border-top: 10px solid #000000;
+              border-bottom: 10px solid transparent;
+              right: 20px;
+              bottom: -23px;
+              transform: rotate(270deg);
+            }
+  
+            .sb8:after {
+              content: "";
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              border-left: 10px solid transparent;
+              border-right: 10px solid rgba(255, 255, 255, 0);
+              border-top: 10px solid rgba(255, 255, 255, 0);
+              border-bottom: 10px solid transparent;
+              right: 17px;
+              bottom: -15px;
+              transform: rotate(270deg);
             }
           }
         }
@@ -555,21 +614,27 @@
         p {
           width: 100%;
           margin-top: 10px;
+          font-size: 0.8rem;
+        
+         text-align: center !important;
         }
   
         h1 {
-          font-size: 4.6rem;
+         
+          font-size: 4.3rem;
+          text-align: center;
         }
   
         h2 {
           font-size: 3rem;
-          margin-top: 10px;
+          text-align: center;
         }
   
         .info--description {
           width: 100%;
-          text-align: left;
+          text-align: center;
           margin: 0 auto;
+          
         }
       }
     }
@@ -581,7 +646,7 @@
       margin-bottom: 0%;
   
       width: 90vw;
-      height: 70vh;
+      height: 80vh;
   
       //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
       .logo--side {
