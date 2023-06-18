@@ -27,9 +27,9 @@ function Projects() {
             gitlink='https://github.com/AndreMicael/Ion-Imoveis-LandingPage'
             sitelink='https://andremicael.github.io/Ion-Imoveis-LandingPage/'
             thumb={Thumb}
-            position='row'             
+            position='rows'             
             ></Mockup>            
-           
+          
                <Link to="/"> <Botao>Ver Mais</Botao> </Link>
         </section>
 
