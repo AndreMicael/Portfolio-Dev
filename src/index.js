@@ -10,23 +10,28 @@ import Projetos from './Pages/Projetos';
 import { ThemeProvider } from './Context/ThemeContext';
 
 const router = createBrowserRouter([
-  {
-    path: '',
-    element: <Rotas />,
-    children: [
-      { path: '', element: <App /> },
-      { path: '/contacts', element: <Contacts /> },
-      { path: '/projetos', element: <Projetos /> },
-    ],
-  },
+    {
+      path: "/",
+      element: <Rotas/>,
+      children: [
+
+        { path: "/" , element: <App/> },
+        { path: "/contacts", element: <Contacts/>},
+        { path: "/projetos", element: <Projetos/> },
+       
+      ],
+    },
 ]);
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} basename={process.env.PUBLIC_URL} />
+      <RouterProvider router={router}/>    
     </ThemeProvider>
+   
   </React.StrictMode>
 );
 
@@ -34,3 +39,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
