@@ -111,20 +111,20 @@ body{
         }
         .home--button button {
 
-          border-color:  #61b8bb;
+          border-color:  #61b8bb !important;
           border-width: 4px;
           background-color: transparent;
           box-shadow: none;
-          color: white;
+          color: white !important;
         
           
           
         }
         .home--button button:hover {
          
-          border-color:  #61b8bb;
+          border-color:  #61b8bb !important;
           border-width: 3px;
-          background-color: $color-primary-dark;
+          background-color: $color-primary-dark !important;
           box-shadow: none;
           color: rgb(37, 37, 37);
           transform: scale(105%) !important;
