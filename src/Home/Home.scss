@@ -231,7 +231,13 @@ $font-primary: "coolvetica_rg";
   visibility: hidden;
 }
 
-@media (max-width: 390px) {
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+
   .home--container {
     margin-bottom: 0%;
 
@@ -334,7 +340,7 @@ $font-primary: "coolvetica_rg";
   }
 }
 // Extra small devices (portrait phones, less than 576px)
-@media (min-width: 391) and (max-width: 575.98px) {
+@media (min-width: 391px) and (max-width: 575.98px) {
   .home--container {
     margin-bottom: 0%;
 
