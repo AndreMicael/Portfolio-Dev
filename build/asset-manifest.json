@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Dev/static/css/main.8571d174.css",
+    "main.js": "/Portfolio_Dev/static/js/main.bdecef0b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Portfolio_Dev/static/js/787.28cb0dcd.chunk.js",
+    "static/media/CV_André_Micael_Sampaio_Pinto.pdf": "/Portfolio_Dev/static/media/CV_André_Micael_Sampaio_Pinto.8e91dd0ef8146be8846e.pdf",
+    "static/media/profile.png": "/Portfolio_Dev/static/media/profile.2079d3783ce1f5ad0e64.png",
+    "static/media/telas.png": "/Portfolio_Dev/static/media/telas.23f7738c2cb6b47098b4.png",
+    "static/media/coolvetica_rg-webfont.woff": "/Portfolio_Dev/static/media/coolvetica_rg-webfont.9ab90e05601be2757e37.woff",
+    "static/media/sun.png": "/Portfolio_Dev/static/media/sun.0782b81bf51a75160b8a.png",
+    "static/media/moon.png": "/Portfolio_Dev/static/media/moon.cfa37b178f3890f6d652.png",
+    "static/media/icon4.png": "/Portfolio_Dev/static/media/icon4.4ad5243e7905fd347f77.png",
+    "static/media/github.png": "/Portfolio_Dev/static/media/github.f11021803f68852df283.png",
+    "static/media/resume.png": "/Portfolio_Dev/static/media/resume.162b927cd744a633c612.png",
+    "static/media/icon5.png": "/Portfolio_Dev/static/media/icon5.3e67b9bf487802868298.png",
+    "static/media/icon13.png": "/Portfolio_Dev/static/media/icon13.6a72a1967063f5f4f174.png",
+    "static/media/logo2.svg": "/Portfolio_Dev/static/media/logo2.f63bf4e1e8a10df83774310fcf21ff8f.svg",
+    "static/media/logo.svg": "/Portfolio_Dev/static/media/logo.608fc0ad2aa2426089e07a01b24cb873.svg",
+    "index.html": "/Portfolio_Dev/index.html",
+    "main.8571d174.css.map": "/Portfolio_Dev/static/css/main.8571d174.css.map",
+    "main.bdecef0b.js.map": "/Portfolio_Dev/static/js/main.bdecef0b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Portfolio_Dev/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8571d174.css",
+    "static/js/main.bdecef0b.js"
+  ]
+}
