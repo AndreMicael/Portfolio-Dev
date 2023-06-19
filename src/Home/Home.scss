@@ -232,7 +232,7 @@ $font-primary: "coolvetica_rg";
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .home--container {
     margin-bottom: 0%;
  
@@ -320,11 +320,13 @@ $font-primary: "coolvetica_rg";
         margin-top: 2%;
         letter-spacing: 0;
         margin-bottom: 5%;
+        text-align: center;
       }
 
       h2 {
         font-size: 2.34rem;
         letter-spacing: 0;
+        text-align: center;
       }
 
       .info--description {
@@ -336,7 +338,7 @@ $font-primary: "coolvetica_rg";
   }
 }
 // Extra small devices (portrait phones, less than 576px)
-@media (min-width: 421px) and (max-width: 575.98px) {
+@media (min-width: 481px) and (max-width: 575.98px) {
   .home--container {
     margin-bottom: 0%;
 

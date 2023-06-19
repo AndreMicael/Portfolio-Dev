@@ -1,42 +1,40 @@
 @font-face {
-    font-family: 'coolvetica_rg';
-    src: url('../fonts/coolvetica_rg-webfont.woff') format('woff2'),
-         url('../fonts/coolvetica_rg-webfont.woff') format('woff') ;
+    font-family: "coolvetica_rg";
+    src: url("../fonts/coolvetica_rg-webfont.woff") format("woff2"),
+      url("../fonts/coolvetica_rg-webfont.woff") format("woff");
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
   }
-
-  $font-primary: 'coolvetica_rg';
-
-.home--button {
-                
-    width: calc( 180px + 5%) ;
+  
+  $font-primary: "coolvetica_rg";
+  
+  .home--button {
+    width: calc(180px + 5%);
     height: 70px;
     margin: 0 auto;
     color: #000 !important;
   
-    
     padding: 0;
-
+  
     button {
-        border: 3px solid #000 !important;
-        width: 100%;
-        height: 100%;
-        color: #000 !important;
-        font-size: 25px;
-        font-family: $font-primary;
-        text-transform: uppercase;
-       
-        font-weight: lighter;
-        box-shadow: 5px 5px #000;
-        cursor: pointer;
-        letter-spacing: 5px;
-        background-color: transparent;
-        
+      border: 3px solid #000 !important;
+      width: 100%;
+      height: 100%;
+      color: #000 !important;
+      font-size: 25px;
+      font-family: $font-primary;
+      text-transform: uppercase;
+  
+      font-weight: lighter;
+      box-shadow: 5px 5px #000;
+      cursor: pointer;
+      letter-spacing: 5px;
+      background-color: transparent;
     }
     button:hover {
-        transform: scale(110%);
+      transform: scale(110%);
   
-        transition: transform 0.1s ease;
+      transition: transform 0.1s ease;
     }
-}
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react'; import './about.scss'; import Botao from '../assets/button.js'; import Profile from '../img/profile.png';
 import { Icone3D,IconeBS, IconeCSS, IconeGIT, IconeHTML,IconeEN, IconeNO,IconeJS,IconePT,IconePS,IconeIL ,IconeREACT, IconeSASS, IconeTRE, IconeUI } from '../assets/imagens'; 
 
+
 function About() { return (
 <div className="about--container">
   <br />

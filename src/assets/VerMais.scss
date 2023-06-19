@@ -1,0 +1,10 @@
+.texto-truncado {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+  }
+  
+  .texto-completo {
+    transition: opacity 0.3s ease;
+  }
