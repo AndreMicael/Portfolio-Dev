@@ -231,59 +231,79 @@ $font-primary: "coolvetica_rg";
   visibility: hidden;
 }
 
-
 @media (max-width: 480px) {
   .home--container {
-    margin-bottom: 0%;
- 
-    width: 90vw;
-    height: 70vw;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 45vh;
+
+    margin: 0 auto !important;
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
     .logo--side {
-      display: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 85%;
+      top: 10%;
     }
 
     ////Todas as estilizações dos textos e links do lado direito da página Home.
     .info--side {
       transform: scale(100%);
       margin: 0 auto;
-      width: 100%;
+      width: 85vw;
 
       .info--text {
         width: 80%;
         margin: 0 auto;
-
-        .info--column {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-
-          p {
-            margin-bottom: 5%;
-            margin-top: 5%;
-            font-size: 0.7rem;
-            font-weight: bold;
-            text-align: center;
-          }
-        }
       }
 
       .info--line {
         flex-direction: column-reverse;
         width: 100% !important;
-        margin: 0 auto;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          order: 1;
+
+          padding: 0;
+
+          p {
+            margin-bottom: 2%;
+            margin-top: 5%;
+            font-size: 0.6rem;
+
+            text-align: left;
+          }
+        }
 
         .info--button {
-          justify-content: space-around;
+          justify-content: space-between !important;
           width: 70vw;
+          height: 90px;
           margin: 0 auto;
           align-items: center;
           padding: 0 !important;
+          margin-bottom: 10% !important;
 
           .button--text {
             text-align: center;
+          }
+
+          .button--git {
+            order: 2;
+          }
+          .button--cv {
+            order: 2;
+          }
+          .button--linkedin {
+            order: 1;
           }
 
           .button--git:hover,
@@ -297,7 +317,14 @@ $font-primary: "coolvetica_rg";
           .button--git,
           .button--linkedin,
           .button--cv {
-            width: 30%;
+            width: 30% !important;
+            height: 90%;
+            margin: 0 auto;
+
+            img {
+              margin: 0 auto !important;
+              width: 50%;
+            }
           }
 
           .baloes {
@@ -308,31 +335,26 @@ $font-primary: "coolvetica_rg";
 
       .info--description {
         width: 100%;
-        margin-top: 0% !important;
+        margin-top: -6% !important;
         font-size: 0.6rem;
-        font-weight: bold;
-        margin-bottom: 2%;
-        text-align: center !important;
+
+        margin-bottom: 5% !important;
+        text-align: left;
+        margin: 0 auto;
       }
 
       h1 {
-        font-size: 2.4rem;
-        margin-top: 2%;
+        font-size: 2.95rem;
+        margin-top: 0;
         letter-spacing: 0;
         margin-bottom: 5%;
-        text-align: center;
+        text-align: left;
       }
 
       h2 {
-        font-size: 2.34rem;
+        font-size: 2rem;
         letter-spacing: 0;
-        text-align: center;
-      }
-
-      .info--description {
-        width: 100%;
         text-align: left;
-        margin: 0 auto;
       }
     }
   }

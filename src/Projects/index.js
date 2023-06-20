@@ -29,7 +29,7 @@ function Projects() {
             thumb={Thumb}
             position='rows'             
             ></Mockup>            
-          
+          <br/>
                <Link to="/"> <Botao>Ver Mais</Botao> </Link>
         </section>
 

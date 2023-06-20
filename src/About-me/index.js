@@ -5,7 +5,7 @@ import { Icone3D,IconeBS, IconeCSS, IconeGIT, IconeHTML,IconeEN, IconeNO,IconeJS
 function About() { return (
 <div className="about--container">
   <br />
-  <br />
+  <br />  <br />
   <Botao>Contato</Botao>
 
   <div className="gap20"> </div>
@@ -16,21 +16,15 @@ function About() { return (
       <img src={Profile} alt="Foto de Perfil"/>
 
     </div>
+    <div className='about--title'> Sobre Mim</div>
     <div className="about--text">
-      <h1>Sobre Mim.</h1>
+    <p>
 
-      <p>
+Estudante de Sistemas de Informação na UFMT, com foco em Front-End e UI/UX. Estágio na PGE-MT me deu experiência em Suporte Nível 1, 2 e 3, Infraestrutura e desenvolvimento web com Wordpress, HTML5 e CSS3. Apaixonado pelo Front-End, busco constantemente aprimorar habilidades e seguir tendências para soluções criativas e eficientes.
 
-        Laboris exercitation velit enim ea mollit aute do esse proident eiusmod
-        est exercitation reprehenderit id. Cillum do aliqua irure dolor sunt
-        officia magna adipisicing. Consequat sunt proident amet labore enim
-        eiusmod pariatur do anim proident eiusmod dolore ut Lorem. Excepteur
-        nisi magna deserunt exercitation consectetur sint excepteur ea non
-        voluptate. Est velit Lorem consequat minim. Aliquip in sunt anim
-        commodo.
-
-      </p>
+</p>     
     </div>
+
 
   </div>
 
@@ -65,10 +59,10 @@ function About() { return (
     <div className="container--skills-column">
       <li className="skills">
         <ul>
-          <div className="icon"><IconePT /><p>Português (Nativo)</p> </div>
+          <div className="icon"><IconePT /><p>Português(Nativo)</p> </div>
         </ul>
         <ul>
-          <div className="icon"><IconeEN /><p>Inglês (Avançado)
+          <div className="icon"><IconeEN /><p>Inglês(Avançado)
               <h5>Writing, reading, listening e speaking.</h5></p>
           </div>
         </ul>

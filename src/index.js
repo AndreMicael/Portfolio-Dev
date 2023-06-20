@@ -9,6 +9,7 @@ import Contacts from './Pages/Contact';
 import Projetos from './Pages/Projetos';
 import { ThemeProvider } from './Context/ThemeContext';
 
+
 const router = createBrowserRouter([
     {
       path: "/",

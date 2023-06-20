@@ -46,48 +46,48 @@ function Home(props) {
 
     return ( 
 
-        <section className='home--container no-select  '>           
-          <div className='logo--side'>          
-           {LogoReact}           
-          </div>
-          <div className='info--side'> 
-           <div className='info--text'>               
-               <div className='info--line'> <div className='info--column'> <p> Prazer, me chamo André </p>  <h2> Front-End </h2>  </div> 
-               <div className='info--button'>            
-               
-                    <div onClick={gitOpen} className='button--git'>            
-
-                         <div>  <Balloons> <p className='button--text'>  Conheça meus projetos</p></Balloons></div>
-                          <img src={GitHub} alt="GitHub"></img>
-                    </div>
-                  
-
-                    <div onClick={LinkedinOpen} className='button--linkedin'> 
-                    
-                    <Balloons> <p className='button--text'>Vamos nos<br/> conhecer?</p></Balloons>
-                        <img src={Linkedin} alt="Linkedin"></img>
-                    
-                    </div> 
-
-               <div className='button--cv' onClick={getCurriculo}>
-
-               <Balloons><p className='button--text'>Baixar Meu<br/> Curriculo  </p></Balloons>
-                   <img src={Resume} alt="Curriculo"></img>
-
-                </div> 
+  <section className='home--container no-select  '>
+   <div className='logo--side'> {LogoReact} </div>
+   <div className='info--side'>
+     <div className='info--text'>
+       <div className='info--line'>
                 
-               </div>
-               
-               </div>
-               <h1> Developer </h1>
-               <p className='info--description'> Tenho 25 anos, sou desenvolvedor com experiência em React, HTML, CSS para aplicações Web.</p>
-           </div>
+                <div className='info--column'>
+                <p> Prazer, me chamo André </p>
+                <h2> Front-End </h2>
+                <h1> Developer </h1>
+                </div>
+
+                <div className='info--button'>
+                <div onClick={gitOpen} className='button--git'>
+                    <div>
+                    <Balloons>
+                        <p className='button--text'> Conheça meus projetos</p>
+                    </Balloons>
+                    </div>
+                    <img src={GitHub} alt="GitHub"></img>
+                </div>
+                <div onClick={LinkedinOpen} className='button--linkedin'>
+                    <Balloons>
+                    <p className='button--text'>Vamos nos <br /> conhecer? </p>
+                    </Balloons>
+                    <img src={Linkedin} alt="Linkedin"></img>
+                </div>
+                <div className='button--cv' onClick={getCurriculo}>
+                    <Balloons>
+                    <p className='button--text'>Baixar Meu <br /> Curriculo </p>
+                    </Balloons>
+                    <img src={Resume} alt="Curriculo"></img>
+                </div>
+                </div>
        
-          
-          </div>
        
-         
-        </section>
+       <p className='info--description'> Tenho 25 anos, sou desenvolvedor com experiência em React, HTML, CSS para aplicações Web.</p>
+
+       </div>
+     </div>
+   </div>
+ </section>
 
 
      );

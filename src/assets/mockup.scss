@@ -86,10 +86,81 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 480px) {
+  .container--projects {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;
+    margin-bottom: 5%;
+
+    
+
+    .mockup--side {
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
+    }
+    .info--sider {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 5%;
+     
+
+      p {
+        font-size: 0.8rem;
+        padding: 10px;
+
+        margin: 0%;
+      }
+      h5 {
+        font-size: 17px;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+
+        font-weight: bold;
+        margin: 0;
+      }
+
+      h6 {
+        height: 30px;
+        display: flex;
+        line-height: 150%;
+        color: #5a5a5a;
+        margin-top: 0px;
+        font-size: 17px;
+      }
+
+      .buttons {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 0px;
+        button {
+          width: 45%;
+          font-size: 15px;
+          padding: 5px;
+          height: 36px;
+          margin-top: 0px;
+        }
+        a {
+          padding: 5px;
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 481px) and (max-width: 575.98px) {
   .container--projects {
     display: flex;
     height: 40vh;
@@ -217,7 +288,6 @@ a {
     display: flex;
     height: 40vh;
 
-
     .mockup--side {
       width: 40%;
       padding: 10px;
@@ -296,7 +366,6 @@ a {
       p {
         font-size: 0.8rem;
         padding: 0px;
-
         margin-bottom: 1%;
       }
       h5 {
@@ -312,7 +381,6 @@ a {
         height: 35px;
         display: flex;
         line-height: 150%;
-
         margin-top: 20px;
         font-size: 20px;
       }
