@@ -189,9 +189,9 @@ h1 {
 
       .about--title {
         width: 60%;
-        height: 25% !important;
-
-        line-height: -15% !important;
+        height: 15% !important;
+      
+        line-height: 15% !important;
         font-family: $font-primary;
         font-size: 2rem;
         height: 40px;
@@ -202,26 +202,27 @@ h1 {
 
       .about--img {
         width: 20%;
-    
+        display: flex;
+        border: 3px solid #000;
+        box-shadow: 2px 2px #000 !important;
+        justify-content: flex-end;
+        align-items: flex-end;       
         margin-bottom: 5%;
 
         img {
           width: 100%;
-
+       
           object-fit: contain;
         }
       }
 
       .about--text {
         padding: 0px;
-      
         width: 100%;
-      
         margin: 0 auto;
 
         p {
           font-size: 18px;
-          line-height: 25px;
           text-align: justify;
          
         }
