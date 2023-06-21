@@ -20,7 +20,7 @@ function Projects() {
             thumb={Thumb}
             position=''             
             ></Mockup>
-
+            <div className='d-none d-sm-block'>
                  <Mockup title="Projeto 02"
             description=" Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi."
             stacks="HTML | CSS | Javascript"
@@ -28,7 +28,7 @@ function Projects() {
             sitelink='https://andremicael.github.io/Ion-Imoveis-LandingPage/'
             thumb={Thumb}
             position='rows'             
-            ></Mockup>            
+            ></Mockup>   </div>         
           <br/>
                <Link to="/"> <Botao>Ver Mais</Botao> </Link>
         </section>
