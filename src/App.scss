@@ -14,6 +14,9 @@ $color-third-dark: #ff1053;
   font-style: normal;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 /* Estilizando a scrollbar */
 ::-webkit-scrollbar {
   width: 10px; /* Largura da scrollbar */
@@ -208,6 +211,9 @@ body {
   }
 
   @media (min-width: 768px) {
+
+
+    
     .container--skills {
       filter: invert(1);
 
@@ -319,6 +325,102 @@ body {
       filter: invert(1);
     }
   }
+
+  
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+
+  li {
+    list-style: none;
+    font-size: 0.9rem;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(104, 104, 104) !important;
+  }
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(184, 184, 184);
+  transition: 0.3s ease-in;
+}
+
+
+  @media screen and (max-width: 768px) {
+ 
+    .nav__toggler {
+      display: block;
+      cursor: pointer;
+     
+      
+   
+    }
+    .nav__menu {
+      position: fixed;
+      top: 7vh;
+      right: 0;
+      height: 93vh;
+      width: 100vw;
+      background: rgba($color: #21242b, $alpha: 1);
+      color: #fff !important;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 0;
+      transform: translateX(100%);
+      transition: 0.5s ease-in;
+      z-index: 1;
+  
+      a {
+        color: #fff;
+      }
+    }
+  
+  /* Active Class */
+  .nav__active {
+    transform: translateX(0%);
+   
+  }
+  
+  /* Toggle Icon Animation */
+  .toggle {
+    z-index: 100 !important;
+    position: fixed;
+    margin-top: 8%;
+    transition: margin-top 2s ease;
+   
+   
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-20px, 5px);
+    margin-left: 30%;
+    background: rgb(179, 179, 179);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    background: rgb(179, 179, 179);
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
+  }
+
+
+
 }
 
 .button-container--app {
@@ -343,3 +445,5 @@ body {
   -o-animation: rotate-logo 180s linear 15s infinite normal;
   -webkit-animation: rotate-logo 180s linear 15s infinite normal;
 }
+
+

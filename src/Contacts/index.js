@@ -11,7 +11,7 @@ function Contacts() {
     ]
     return ( 
 
-        <section className='contact--container'>
+        <section id='contacts' className='contact--container'>
            
             <h1>Precisa de um Front-End? <br/> Vamos conversar! </h1>
          
