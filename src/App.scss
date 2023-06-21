@@ -1,19 +1,17 @@
-
-$font-primary: 'coolvetica_rg';
-$font-secondary: 'Rubik', sans-serif;
-$color-primary-dark: #8EDCE6;
-$color-secondary-dark: #39404A;
-$color-third-dark: #FF1053;
-@import url('../node_modules//normalize.css/');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
-
+$font-primary: "coolvetica_rg";
+$font-secondary: "Rubik", sans-serif;
+$color-primary-dark: #8edce6;
+$color-secondary-dark: #39404a;
+$color-third-dark: #ff1053;
+@import url("../node_modules//normalize.css/");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
 
 @font-face {
-  font-family: 'coolvetica_rg';
-  src: url('fonts/coolvetica_rg-webfont.woff') format('woff2'),
-       url('fonts/coolvetica_rg-webfont.woff') format('woff') ;
+  font-family: "coolvetica_rg";
+  src: url("fonts/coolvetica_rg-webfont.woff") format("woff2"),
+    url("fonts/coolvetica_rg-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
 /* Estilizando a scrollbar */
@@ -34,12 +32,8 @@ $color-third-dark: #FF1053;
   background-color: #555; /* Cor do thumb em hover */
 }
 
-
-body{
+body {
   font-family: $font-secondary;
-  
-  
- 
 }
 * {
   box-sizing: content-box;
@@ -48,7 +42,6 @@ body{
 .App {
   text-align: center;
   overflow-x: hidden;
-  
 }
 
 .App-logo {
@@ -71,11 +64,7 @@ body{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  
-
 }
-
-
 
 .App-link {
   color: #61dafb;
@@ -90,205 +79,181 @@ body{
   }
 }
 
-
 .modo-claro {
   background-color: #fff;
   color: #000;
- 
 }
 
-    .modo-escuro {
-      background-color: #2a2f36;
-      color: #dedede;
-      transition: background-color 0.5s ease;
+.modo-escuro {
+  background-color: #2a2f36;
+  color: #dedede;
+  transition: background-color 0.5s ease;
 
-        li {
-          filter: invert(1);
-        }
-        
-        .info--side, .info--text, .info--button, .info--button .button--text {
-          filter: invert(1);
-        }
-        .home--button button {
+  .info--sider {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 5%;
+   
 
-          border-color:  #61b8bb !important;
-          border-width: 4px;
-          background-color: transparent;
-          box-shadow: none;
-          color: white !important;
-        
-          
-          
-        }
-        .home--button button:hover {
-         
-          border-color:  #61b8bb !important;
-          border-width: 3px;
-          background-color: $color-primary-dark !important;
-          box-shadow: none;
-          color: rgb(37, 37, 37);
-          transform: scale(105%) !important;
-          
-          
-        }
 
-        .baloes {
-          filter: invert(1);
-          background-color: $color-third-dark;
-          border: 2px solid transparent !important;
-          color: rgb(209, 209, 209) !important;
-          font-weight: lighter;
-          
-              
-          
-        }
 
-        .sb8{
-          border-color: white;
-          
-        }
+  
 
-        .sb8:before {
-          filter: invert(1);
-          content: "";
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          border-left: 10px solid transparent;
-          border-right: 10px solid $color-primary-dark;
-          border-top: 10px solid $color-primary-dark;
-          border-bottom: 10px solid transparent;
-          right: 20px;
-          bottom: -23px;
-          transform: rotate(270deg);
-    
-          
-      }
-      
-      .sb8:after {
-        
-          content: "";
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          border-left: 10px solid transparent;
-          border-right: 10px solid $color-primary-dark;
-          border-top: 10px solid $color-primary-dark;
-          border-bottom: 10px solid transparent;
-          right: 17px;
-          bottom: -15px;
-          transform: rotate(270deg);
-      }
-
-      
-      .button--border {
-    
-        background-color: #878787 !important;
-        height: 35px;
-        border-radius: 20px;    
-        display: flex;
-        flex-direction: row;   
-             
+    h6 {
+     
+      line-height: 150%;
+      color: #ffffff !important;
+     
     }
-
-.about--container {
-  
-  .about--img {
-
-    border: 10px solid $color-secondary-dark;
-    box-shadow: none;
-  
+    
   }
 
+  li {
+    filter: invert(1);
+  }
+
+  .info--side,
+  .info--text,
+  .info--button,
+  .info--button .button--text {
+    filter: invert(1);
+  }
+  .home--button button {
+    border-color: #61b8bb !important;
+    border-width: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    color: white !important;
+  }
+  .home--button button:hover {
+    border-color: #61b8bb !important;
+    border-width: 3px;
+    background-color: $color-primary-dark !important;
+    box-shadow: none;
+    color: rgb(37, 37, 37);
+    transform: scale(105%) !important;
+  }
+
+  .baloes {
+    filter: invert(1);
+    background-color: $color-third-dark;
+    border: 2px solid transparent !important;
+    color: rgb(209, 209, 209) !important;
+    font-weight: lighter;
+  }
+
+  .sb8 {
+    border-color: white;
+  }
+
+  .sb8:before {
+    filter: invert(1);
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid $color-primary-dark;
+    border-top: 10px solid $color-primary-dark;
+    border-bottom: 10px solid transparent;
+    right: 20px;
+    bottom: -23px;
+    transform: rotate(270deg);
+  }
+
+  .sb8:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid $color-primary-dark;
+    border-top: 10px solid $color-primary-dark;
+    border-bottom: 10px solid transparent;
+    right: 17px;
+    bottom: -15px;
+    transform: rotate(270deg);
+  }
+
+  .button--border {
+    background-color: #878787 !important;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about--container {
+    .about--img {
+      border: 5px solid $color-secondary-dark !important;
+      box-shadow: none !important;
+    }
+
     .about--text {
-      
-  
       h1 {
-        
         color: $color-primary-dark;
       }
-
-      
-     
-  
     }
-  }       
+  }
 
+  .container--skills {
+    filter: invert(1);
+
+    ul {
+      background-color: #39404d !important;
+    }
+    div {
+      margin-left: 15px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
     .container--skills {
       filter: invert(1);
 
-    
       ul {
         background-color: $color-secondary-dark;
-        border-left: 6px solid $color-third-dark;
+        border-left: 6px solid $color-third-dark !important;
       }
       div {
         margin-left: 15px !important;
       }
+    }
+  }
 
+  h1 {
+    color: $color-primary-dark !important;
+  }
+
+  .container--skills-column {
+    filter: invert(1);
+
+    width: 15vw !important;
+
+    ul {
+    }
+    div {
+      margin-left: 20px !important;
     }
 
+    .skills {
+      display: grid;
+      column-gap: 2.8vw;
+      row-gap: 0vw;
 
-    @media (min-width: 768px) {
-      .container--skills {
+      h5 {
         filter: invert(1);
-  
-      
-        ul {
-          background-color: $color-secondary-dark;
-          border-left: 6px solid $color-third-dark !important;
-        }
-        div {
-          margin-left: 15px !important;
-        }
-  
       }
-
     }
+  }
 
-
-    h1 {
-        
-      color: $color-primary-dark !important;
-    }
-
-    .container--skills-column{
-      filter: invert(1);
-      
-      width: 15vw !important;
-     
-    
-      ul {
-       
-        
-      }
-      div {
-        margin-left: 20px !important;
-        
-      }
-
-      .skills {
-    
-        display:grid ;   
-        column-gap: 2.8vw;
-        row-gap: 0vw;
-     
-        
-
-        h5 {
-          filter: invert(1);
-        }
-      }
-      
-    }
-
-    .container--projects {
-      background-color: $color-secondary-dark;
-      box-shadow: 4px 4px 10px rgba($color:  #21242b, $alpha: 0.5);
-      padding: 20px;
+  .container--projects {
+    background-color: $color-secondary-dark;
+    box-shadow: 4px 4px 10px rgba($color: #21242b, $alpha: 0.5);
+    padding: 20px;
     .info--sider {
       filter: invert(0);
-         
+
       h4 {
         color: $color-third-dark;
       }
@@ -297,12 +262,11 @@ body{
       }
 
       h6 {
-       
-        background-color: rgba($color: #21242b , $alpha: 0.2);
+        background-color: rgba($color: #21242b, $alpha: 0.2);
         padding: 2px;
-       
+
         div {
-          background-color: $color-third-dark
+          background-color: $color-third-dark;
         }
       }
 
@@ -310,9 +274,9 @@ body{
         margin-top: 25px;
         button {
           background-color: transparent;
-          color: #fff ;
+          color: #fff;
           border: 3px solid $color-primary-dark;
-          box-shadow: none;      
+          box-shadow: none;
           cursor: pointer;
         }
         button:hover {
@@ -320,87 +284,57 @@ body{
           color: $color-secondary-dark;
         }
       }
-
-
     }
-    
-
   }
 
   .form--container {
-
-   
-
-   
-      
-     form {
-  
-      
-       .form--contact{
-         
-         box-shadow: 4px 4px 0 transparent !important;
-         background-color: transparent !important;
-         border-color: $color-primary-dark !important;
-         color: #fff !important;
-       
-        
-       }
-       .text--contact{
- 
+    form {
+      .form--contact {
         box-shadow: 4px 4px 0 transparent !important;
-         background-color: transparent !important;
-         border-color: $color-primary-dark !important;
-         color: #fff !important;
-        
-        
-       }
-       input::placeholder, textarea::placeholder{
+        background-color: transparent !important;
+        border-color: $color-primary-dark !important;
+        color: #fff !important;
+      }
+      .text--contact {
+        box-shadow: 4px 4px 0 transparent !important;
+        background-color: transparent !important;
+        border-color: $color-primary-dark !important;
+        color: #fff !important;
+      }
+      input::placeholder,
+      textarea::placeholder {
         color: #dedede;
-       }
-     
-   
-     }
-   
- 
-   }
+      }
+    }
+  }
 
-   .footer--container{
-
-    background-image: linear-gradient(to bottom, transparent 60%,rgba($color: #171a1f , $alpha: 0.8));
-   
+  .footer--container {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 60%,
+      rgba($color: #171a1f, $alpha: 0.8)
+    );
 
     img {
-        
       filter: invert(1);
-      
+    }
   }
-  
-  
-  } 
-
-    
-    
 }
 
 .button-container--app {
-  
   width: 35px;
   height: 35px;
   position: absolute;
-  
-
- 
 }
 
 .no-select {
-  -webkit-user-select:none;  
-  -moz-user-select:none;     
-  -ms-user-select:none;      
-  user-select:none;  
-} 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .logo-react {
-
   width: 60vw;
   padding: 0;
   animation: rotate-logo 180s linear 15s infinite normal;
@@ -408,6 +342,4 @@ body{
   -ms-animation: rotate-logo 180s linear 15s infinite normal;
   -o-animation: rotate-logo 180s linear 15s infinite normal;
   -webkit-animation: rotate-logo 180s linear 15s infinite normal;
-   
 }
-

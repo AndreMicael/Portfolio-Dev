@@ -62,7 +62,7 @@ $color-secondary-dark: rgb(37, 37, 37);
 
 @media (max-width: 575.98px) {
   .contact--container {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     height: 80vh;
     margin-bottom: 0%;
@@ -85,7 +85,7 @@ $color-secondary-dark: rgb(37, 37, 37);
       form {
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 90vw;
 
         .form--contact {
           border: 3px solid black;

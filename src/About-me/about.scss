@@ -176,7 +176,7 @@ h1 {
 
 @media (max-width: 480px) {
   .about--container {
-    width: 80vw;
+    width: 85vw;
     flex-direction: row;
 
     .about--container-img {
@@ -242,8 +242,9 @@ h1 {
     }
 
     .skills--section {
-      width: 80vw;
+      width: 85vw;
       margin-top: 7%;
+      
 
       display: flex;
       flex-direction: column;
@@ -263,13 +264,18 @@ h1 {
 
       .container--skills {
         list-style: none;
-        width: 80vw;
+        width: 85vw;
+        height: fit-content !important;
 
         .skills {
           display: grid;
           grid-template-columns: 45% 45%;
-          column-gap: 5% !important;
+          column-gap: 8% !important;
           row-gap: 5%;
+
+          p{
+            font-size: 16px;
+          }
 
           ul {
             margin: 0;
@@ -277,17 +283,20 @@ h1 {
             text-align: left;
             font-size: 0.8rem;
             display: flex;
-
+          
             flex-direction: row;
-
+            height: 50px;
             background-color: transparent;
 
             div {
               display: flex;
               flex-direction: row;
               padding: 5px !important;
-              margin-left: 10px;
+              margin-left: 5px;
               margin-top: 2px;
+
+              
+              
             }
           }
         }
@@ -310,15 +319,15 @@ h1 {
             display: flex;
             flex-direction: row;
             padding: 2px !important;
-
-            margin-left: 8px;
+      
+            margin-left: 5px;
             margin-top: 2px;
           }
           p {
             padding: 2px;
             line-height: 150%;
             margin-left: 10px;
-
+          
             font-size: 0.7rem;
             width: 100%;
 
