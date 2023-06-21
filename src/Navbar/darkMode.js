@@ -1,8 +1,7 @@
 import React from 'react';
 import './darkMode.scss'
-import { useState, useEffect } from 'react';
-import Sun from '../img/sun.png';
-import Moon from '../img/moon.png';
+import { useState } from 'react';
+
 import { useContext } from 'react';
 import { ThemeContext } from '../Context/ThemeContext';
 
@@ -11,7 +10,7 @@ function DarkMode(props) {
 
     const [circleToggle, setcircleToggle] = useState('0');
    
-    const {theme, toggleTheme,toggleLogo} = useContext(ThemeContext);
+    const {icon,toggleIcon, toggleTheme,toggleLogo,toggleLogoAndre} = useContext(ThemeContext);
 
 
 
@@ -19,6 +18,9 @@ function DarkMode(props) {
         setcircleToggle(!circleToggle);
         toggleTheme();
         toggleLogo();
+        toggleIcon();
+        toggleLogoAndre();
+        
         
       };
     
@@ -26,15 +28,8 @@ function DarkMode(props) {
         transform: circleToggle ? 'translateX(1%)' : 'translateX(112%)',        
       };  
 
-      const [icon,setIcon] = useState(Sun);
-      useEffect((icon) => {
-        
-        if (icon === Sun) {
-          setIcon(Moon);
-        } else {
-          setIcon(Sun);
-        }
-      }, [theme]);
+
+      
 
 
 

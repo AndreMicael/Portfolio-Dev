@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Navbar.scss'
+import { useContext } from 'react';
+import { ThemeContext } from '../Context/ThemeContext';
 
 
 
@@ -9,13 +11,15 @@ function Navbar(props) {
 
 
 
+    const {logoAndre} = useContext(ThemeContext);
+
    
     
 
     return ( 
 
         <nav>
-            <div className='logo'> Logo </div>
+            <div className='logo'> <img src={logoAndre} alt="Logo"/> </div>
             <div className='links--nav'> 
             
             <ul>

@@ -12,6 +12,9 @@ nav {
 
   .logo {
     width: 40%;
+    img {
+      width: 100%;
+    }
   }
 
   .button--darkmode {
@@ -72,6 +75,15 @@ nav {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+
+  .logo {
+
+    width: 20vw !important;
+    img {
+      width: 100%;
+    }
+  }
+
   nav {
     grid-template-columns: 15% 55% 25%;
     gap: 5%;
@@ -84,6 +96,13 @@ nav {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 576px) and (max-width: 991.98px) {
+  .logo {
+
+    width: 20vw !important;
+    img {
+      width: 100%;
+    }
+  }
   nav {
     grid-template-columns: 15% 55% 25%;
     gap: 7%;
@@ -96,6 +115,14 @@ nav {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .logo {
+
+    width: 20vw !important;
+    img {
+      width: 100%;
+    }
+  }
+  
   nav {
     grid-template-columns: 5% 65% 5%;
     gap: 8%;
