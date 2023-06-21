@@ -16,8 +16,8 @@ const Mockup = (props) => {
     <h6> <div/> {props.stacks} </h6>
 
     <div className='buttons'>
-            <button><a href={props.gitlink} target="_blank"  rel="noreferrer" > Repositório Github </a>  </button>
-            <button><a href={props.sitelink} target="_blank"  rel="noreferrer" > Site Demonstração </a>  </button>
+            <button><a href={props.gitlink} target="_blank"  rel="noreferrer" > Github </a>  </button>
+            <button><a href={props.sitelink} target="_blank"  rel="noreferrer" > Demo </a>  </button>
         </div>
 
 

@@ -10,7 +10,7 @@ function Projects() {
 
         <section className='projects--container'>
 
-            <h1> Projetos Recentes </h1>
+            <h1> Projetos Recentes.</h1>
           
             <Mockup title="Projeto 01"
             description=" Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi."
