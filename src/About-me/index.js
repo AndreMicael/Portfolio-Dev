@@ -1,6 +1,6 @@
 import React from 'react'; import './about.scss'; import Botao from '../assets/button.js'; import Profile from '../img/profile.png';
 import { Icone3D,IconeBS, IconeCSS, IconeGIT, IconeHTML,IconeEN, IconeNO,IconeJS,IconePT,IconePS,IconeIL ,IconeREACT, IconeSASS, IconeTRE, IconeUI } from '../assets/imagens'; 
-import { Link } from 'react-scroll';
+
 
 function About() { 
   
@@ -12,7 +12,7 @@ function About() {
   <br />
   <br />  <br />
   
-  <Botao><Link to="contacts" smooth={true} duration={500}>Contato</Link></Botao>
+  <Botao>Contato</Botao>
 
   <div className="gap20"> </div>
 

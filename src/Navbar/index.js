@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import React from 'react';
 import './Navbar.scss'
 import { useContext,useState,useEffect } from 'react';
@@ -52,11 +52,11 @@ function Navbar(props) {
                       <div className='logo'> <img src={logoAndre} alt="Logo"/> </div>
                 <div className='links--nav'> 
                     <ul className={active}>
-                        <li className="nav__item animacao-underline"> <a href="#" className="nav__link">Inicio</a></li>
-                        <li className="nav__item  animacao-underline"> <a href="#" className="nav__link">Sobre Mim</a></li>
-                        <li className="nav__item animacao-underline"> <a href="#" className="nav__link">Experiencias</a></li>
-                        <li className="nav__item animacao-underline"> <a href="#" className="nav__link">Projetos</a></li>
-                        <li className="nav__item animacao-underline"> <a href="#contact" className="nav__link">Contato</a></li>
+                        <li className="nav__item animacao-underline"> <a href="http://#" className="nav__link">Inicio</a></li>
+                        <li className="nav__item  animacao-underline"> <a href="http://#" className="nav__link">Sobre Mim</a></li>
+                        <li className="nav__item animacao-underline"> <a href="http://#" className="nav__link">Experiencias</a></li>
+                        <li className="nav__item animacao-underline"> <a href="http://#" className="nav__link">Projetos</a></li>
+                        <li className="nav__item animacao-underline"> <a href="http://#" className="nav__link">Contato</a></li>
                     </ul>
                     <div onClick={navToggle} className={icon}>
                         <div className="line1"></div>
