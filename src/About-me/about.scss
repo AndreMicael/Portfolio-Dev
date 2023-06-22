@@ -44,11 +44,18 @@ h1 {
       }
     }
 
-    .about--title {
+    .about--title-in {
       font-size: 2rem;
       width: fit-content;
       font-family: $font-primary;
       height: fit-content !important;
+      
+    }
+
+    .about--title-out{
+      
+      display: none;
+   
     }
 
     p {
@@ -222,7 +229,6 @@ h1 {
       .about--title {
         width: 60%;
         height: 15% !important;
-
         line-height: 15% !important;
         font-family: $font-primary;
         font-size: 2rem;
@@ -382,26 +388,31 @@ h1 {
       display: flex;
 
       .about--img {
-        width: 20%;
+        width: 30%;
         height: 15vw;
-        border: 1px solid red;
+        display: none;
+     
 
         img {
           width: 100%;
           object-fit: contain;
           position: relative;
+          border: 2px solid #000;
+          box-shadow: 2px 2px #000;
         }
       }
       
-      .about--title {
-        border: 1px solid red;
+      .about--title-in {
+   
+       
       }
+
 
       .about--text {
         width: 100%;
         margin-left: -21%;
         padding: 0px;
-        border: 1px solid red;
+      
 
         h1 {
           margin-bottom: 25px;
@@ -611,24 +622,36 @@ h1 {
         height: 15vw;
 
         img {
+          margin-top: 85%;
           width: 100%;
           object-fit: contain;
           position: relative;
+          border: 2px solid #000;
+          box-shadow: 2px 2px #000;
         }
       }
 
       .about--text {
         width: 100%;
         margin-left: -21%;
-        padding: 0px;
-
+        
+     
+        
         h1 {
           margin-bottom: 25px;
           margin-top: 10%;
-
+      
           width: 80%;
           margin-left: 25%;
         }
+      }
+      .about--title-in {
+      
+        height: fit-content;
+           
+            margin-left: -23%;
+  
+
       }
     }
 
@@ -1267,3 +1290,5 @@ h1 {
     }
   }
 }
+
+

@@ -1,12 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './mockup.scss'
 
+
 const Mockup = (props) => {
+
+  const criarEstiloInicial = (mockup) => {
+    return {
+      backgroundImage: `url(${mockup})`,
+      backgroundSize: '80%',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50% 5%',
+      };
+  };
+
+
+
+
   
   return (
     <div className={`container--projects ${props.position}`}>    {/* add row */}
     <div className='mockup--side'>
-    <img src={props.thumb} alt={`${props.title} - thumbnail `}></img>
+    <img style={criarEstiloInicial(props.projeto)} src={props.thumb} alt={`${props.title} - thumbnail `}></img>
+    <div className='telas--mockup'> </div>
        </div>
     <div className='info--sider'> 
     

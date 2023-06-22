@@ -14,6 +14,10 @@ $color-third-dark: #ff1053;
   font-style: normal;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -90,17 +94,22 @@ body {
 .modo-escuro {
   background-color: #2a2f36;
   color: #dedede;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.8s ease-in-out;
+
+  .VerMais--button {
+
+    button {
+      background-color: #61b8bb;
+      border: none;
+      color: #171a1f;
+}
+}
 
   .info--sider {
     width: 100%;
     padding: 0px;
     margin-bottom: 5%;
    
-
-
-
-  
 
     h6 {
      
@@ -188,9 +197,14 @@ body {
 
   .about--container {
     .about--img {
-      border: 5px solid $color-secondary-dark !important;
+     background-color: transparent;
+
+
+     img {
+      background-color: #ffffff;
+      border: 3px solid #3a404e !important;
       box-shadow: none !important;
-    }
+    }}
 
     .about--text {
       h1 {
@@ -357,7 +371,7 @@ body {
   height: 0.2rem;
   margin: 0.4rem;
   background: rgb(184, 184, 184);
-  transition: 0.3s ease-in;
+  
 }
 
 
@@ -382,7 +396,7 @@ body {
       justify-content: space-around;
       gap: 0;
       transform: translateX(100%);
-      transition: 0.5s ease-in;
+     
       z-index: 1;
   
       a {
@@ -401,7 +415,7 @@ body {
     z-index: 100 !important;
     position: fixed;
     margin-top: 8%;
-    transition: margin-top 2s ease;
+   
    
    
   }

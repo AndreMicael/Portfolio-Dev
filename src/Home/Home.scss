@@ -365,7 +365,7 @@ $font-primary: "coolvetica_rg";
 @media (min-width: 481px) and (max-width: 575.98px) {
   .home--container {
     margin-bottom: 0%;
-
+ 
     width: 90vw;
     height: 90vw;
     margin: 0 auto;
@@ -380,27 +380,30 @@ $font-primary: "coolvetica_rg";
       transform: scale(100%);
       margin: 0 auto;
       width: 100%;
+   
 
       .info--text {
         width: 80%;
-
+        height: 0;
         margin: 0 auto;
 
         .info--column {
           display: flex;
           flex-direction: column;
           width: 100%;
+          order: 2;
         }
       }
 
       .info--line {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100% !important;
         margin: 0 auto;
 
         .info--button {
           justify-content: space-around;
           width: 100%;
+          order: 1;
 
           .button--text {
             text-align: center;
@@ -474,12 +477,14 @@ $font-primary: "coolvetica_rg";
 
       p {
         width: 100%;
-        margin-top: 10px;
+        margin-bottom: 3%;
+        margin-top: 0;
         font-size: 0.8rem;
       }
 
       h1 {
         font-size: 3.1rem;
+        margin: 0;
       }
 
       h2 {
@@ -490,6 +495,11 @@ $font-primary: "coolvetica_rg";
         width: 100%;
         text-align: left;
         margin: 0 auto;
+        order: 3;
+    
+        p{
+          margin: 0;
+        }
       }
     }
   }
@@ -630,9 +640,8 @@ $font-primary: "coolvetica_rg";
 @media (min-width: 768px) and (max-width: 991.98px) {
   .home--container {
     margin: 0 auto;
-
     width: 90vw;
-    height: 66vh;
+    height: fit-content;
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
     .logo--side {
@@ -643,6 +652,8 @@ $font-primary: "coolvetica_rg";
     .info--side {
       transform: scale(110%);
       margin-top: 5%;
+  
+      height: fit-content;
 
       .info--text {
         width: 80%;
@@ -653,18 +664,23 @@ $font-primary: "coolvetica_rg";
           display: flex;
           flex-direction: column;
           width: 100%;
+          order: 2;        
+          margin-top: 2%;
+          height: fit-content !important;
+        
         }
       }
 
       .info--line {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100% !important;
         margin: 0 auto;
 
         .info--button {
           justify-content: space-around;
-          width: 100%;
-          margin-bottom: 5%;
+          width: 80%;
+          margin: 0 auto;
+          order: 1;
 
           .button--text {
             text-align: center;
@@ -735,7 +751,7 @@ $font-primary: "coolvetica_rg";
 
       p {
         width: 100%;
-        margin-top: 10px;
+        padding: 0; margin: 0;
         font-size: 0.8rem;
 
         text-align: center !important;
@@ -744,17 +760,24 @@ $font-primary: "coolvetica_rg";
       h1 {
         font-size: 4.3rem;
         text-align: center;
+        margin-top: -1% !important;
+        margin: 0;
+        padding: 0;
       }
 
       h2 {
         font-size: 3rem;
         text-align: center;
+        margin: 0;
+        padding: 0;
       }
 
       .info--description {
-        width: 100%;
-        text-align: center;
+        width: 80%;
+        text-align: right !important;
         margin: 0 auto;
+        order: 3;
+       
       }
     }
   }

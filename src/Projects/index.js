@@ -4,6 +4,7 @@ import Botao from '../assets/button'
 import { Link } from 'react-router-dom';
 import Mockup from '../assets/Mockup';
 import Thumb from '../img/telas.png';
+import Projeto01 from "../img/projeto01.png"
 
 function Projects() {
     return (  
@@ -18,6 +19,7 @@ function Projects() {
             gitlink='https://github.com/AndreMicael/Ion-Imoveis-LandingPage'
             sitelink='https://andremicael.github.io/Ion-Imoveis-LandingPage/'
             thumb={Thumb}
+            projeto={Projeto01}
             position=''             
             ></Mockup>
             <div className='d-none d-sm-block'>
@@ -27,6 +29,7 @@ function Projects() {
             gitlink='https://github.com/AndreMicael/Ion-Imoveis-LandingPage'
             sitelink='https://andremicael.github.io/Ion-Imoveis-LandingPage/'
             thumb={Thumb}
+            projeto={Projeto01}
             position='rows'             
             ></Mockup>   </div>         
           <br/>

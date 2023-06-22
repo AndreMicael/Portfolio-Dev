@@ -23,9 +23,9 @@ function About() {
         <img src={Profile} alt="Foto de Perfil"/>
 
       </div>
-      <div className='about--title d-none d-sm-block'>Sobre Mim.</div>
+      <div className='about--title-out'>Sobre Mim.</div>
     <div className="about--text">
-    <div className='about--title d-sm-none'>Sobre Mim.</div>
+    <div className='about--title-in'>Sobre Mim.</div>
     <p>
     <ReadMore
     limit={330}
