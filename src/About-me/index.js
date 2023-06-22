@@ -1,5 +1,6 @@
 import React from 'react'; import './about.scss'; import Botao from '../assets/button.js'; import Profile from '../img/profile.png';
 import { Icone3D,IconeBS, IconeCSS, IconeGIT, IconeHTML,IconeEN, IconeNO,IconeJS,IconePT,IconePS,IconeIL ,IconeREACT, IconeSASS, IconeTRE, IconeUI } from '../assets/imagens'; 
+import ReadMore from '../assets/ReadMore';
 
 
 function About() { 
@@ -17,17 +18,22 @@ function About() {
   <div className="gap20"> </div>
 
   <div className="about--container-img">
-    <div className="about--img">
+      <div className="about--img">
 
-      <img src={Profile} alt="Foto de Perfil"/>
+        <img src={Profile} alt="Foto de Perfil"/>
 
-    </div>
-    <div className='about--title'> Sobre Mim</div>
+      </div>
+      <div className='about--title d-none d-sm-block'>Sobre Mim.</div>
     <div className="about--text">
+    <div className='about--title d-sm-none'>Sobre Mim.</div>
     <p>
-
-Estudante de Sistemas de Informação na UFMT, com foco em Front-End e UI/UX. Estágio na PGE-MT me deu experiência em Suporte Nível 1, 2 e 3, Infraestrutura e desenvolvimento web com Wordpress, HTML5 e CSS3. Apaixonado pelo Front-End, busco constantemente aprimorar habilidades e seguir tendências para soluções criativas e eficientes.
-
+    <ReadMore
+    limit={330}
+    >{ `Estudante de Sistemas de Informação pela Universidade Federal do Estado de Mato Grosso, com interesse especializado em Front-End e UI/UX. 
+    Durante meu estágio na Procuradoria Geral do Estado de Mato Grosso, adquiri habilidades práticas em Suporte Nível 1, 2 e 3 e um pouco de Infraestrutura, 
+    além de desenvolvimento web com Wordpress, HTML5 e CSS3. Essa experiência despertou minha paixão pelo Front-End e fortaleceu meu desejo de seguir uma carreira 
+    nessa área. Estou constantemente buscando aprimorar minhas habilidades e acompanhar as tendências do setor para entregar soluções criativas e eficientes.` }
+ </ReadMore>
 </p>     
     </div>
 

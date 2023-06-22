@@ -27,10 +27,43 @@ h1 {
 
   .about--container-img {
     display: flex;
+
+    margin: 0 !important;
+
+    .about--img {
+      height: 100% !important;
+      margin: 0 !important;
+      border: none;
+      box-shadow: none;
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .about--title {
+      font-size: 2rem;
+      width: fit-content;
+      font-family: $font-primary;
+      height: fit-content !important;
+    }
+
+    p {
+      padding: 0;
+      text-align: justify;
+    }
+    .about--text {
+      width: 100%;
+      padding: 2% !important;
+      margin: 0 !important;
+    }
   }
 
   .gap20 {
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
 
   .about--img {
@@ -185,12 +218,11 @@ h1 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
-   
 
       .about--title {
         width: 60%;
         height: 15% !important;
-      
+
         line-height: 15% !important;
         font-family: $font-primary;
         font-size: 2rem;
@@ -201,19 +233,19 @@ h1 {
       }
 
       .about--img {
-        width:70px !important;
-        height: 70px !important;    
+        width: 70px !important;
+        height: 70px !important;
         display: flex;
         border: 3px solid #000;
         box-shadow: 2px 2px #000 !important;
         justify-content: flex-end;
-        align-items: flex-end;       
+        align-items: flex-end;
         margin-bottom: 5%;
 
         img {
           width: 100%;
           height: 100%;
-           object-fit: cover !important;
+          object-fit: cover !important;
         }
       }
 
@@ -225,7 +257,6 @@ h1 {
         p {
           font-size: 18px;
           text-align: justify;
-         
         }
 
         h1 {
@@ -244,7 +275,6 @@ h1 {
     .skills--section {
       width: 85vw;
       margin-top: 7%;
-      
 
       display: flex;
       flex-direction: column;
@@ -273,7 +303,7 @@ h1 {
           column-gap: 8% !important;
           row-gap: 5%;
 
-          p{
+          p {
             font-size: 16px;
           }
 
@@ -283,7 +313,7 @@ h1 {
             text-align: left;
             font-size: 0.8rem;
             display: flex;
-          
+
             flex-direction: row;
             height: 50px;
             background-color: transparent;
@@ -294,9 +324,6 @@ h1 {
               padding: 5px !important;
               margin-left: 5px;
               margin-top: 2px;
-
-              
-              
             }
           }
         }
@@ -319,7 +346,7 @@ h1 {
             display: flex;
             flex-direction: row;
             padding: 2px !important;
-      
+
             margin-left: 5px;
             margin-top: 2px;
           }
@@ -327,7 +354,7 @@ h1 {
             padding: 2px;
             line-height: 150%;
             margin-left: 10px;
-          
+
             font-size: 0.7rem;
             width: 100%;
 
@@ -357,6 +384,7 @@ h1 {
       .about--img {
         width: 20%;
         height: 15vw;
+        border: 1px solid red;
 
         img {
           width: 100%;
@@ -364,11 +392,16 @@ h1 {
           position: relative;
         }
       }
+      
+      .about--title {
+        border: 1px solid red;
+      }
 
       .about--text {
         width: 100%;
         margin-left: -21%;
         padding: 0px;
+        border: 1px solid red;
 
         h1 {
           margin-bottom: 25px;
