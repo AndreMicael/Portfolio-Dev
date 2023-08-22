@@ -230,3 +230,943 @@ $font-primary: "coolvetica_rg";
 .esconder {
   visibility: hidden;
 }
+
+@media (max-width: 480px) {
+  .home--container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 53vh;
+
+    margin: 0 auto !important;
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 82%;
+      top: 10%;
+      width: 14%;
+    }
+
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+     
+      margin: 0 auto;
+      width: 85vw;
+
+      .info--text {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .info--line {
+        flex-direction: column-reverse;
+        width: 100% !important;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+          order: 1;
+
+          padding: 0;
+
+          p {
+            margin-bottom: 2%;
+            margin-top: 5%;
+            font-size: 0.6rem;
+
+            text-align: left;
+          }
+        }
+
+        .info--button {
+          justify-content: space-between !important;
+          width: 70vw;
+          height: 90px;
+          margin: 0 auto;
+          align-items: center;
+          padding: 0 !important;
+          margin-bottom: 10% !important;
+
+          .button--text {
+            text-align: center;
+          }
+
+          .button--git {
+            order: 2;
+          }
+          .button--cv {
+            order: 2;
+          }
+          .button--linkedin {
+            order: 1;
+          }
+
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+
+          .button--git,
+          .button--linkedin,
+          .button--cv {
+            width: 30% !important;
+            height: 90%;
+            margin: 0 auto;
+
+            img {
+              margin: 0 auto !important;
+              width: 50%;
+            }
+          }
+
+          .baloes {
+            display: none;
+          }
+        }
+      }
+
+      .info--description {
+        width: 100%;
+        margin-top: -6% !important;
+        font-size: 0.6rem;
+
+        margin-bottom: 5% !important;
+        text-align: left;
+        margin: 0 auto;
+      }
+
+      h1 {
+        width: 100% !important;
+        font-size: 255%;
+        margin-top: 0;
+        letter-spacing: 0;
+        margin-bottom: 5%;
+        text-align: left;
+      }
+
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 481px) and (max-width: 575.98px) {
+  .home--container {
+    margin-bottom: 0%;
+ 
+    width: 90vw;
+    height: 90vw;
+    margin: 0 auto;
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side {
+      display: none;
+    }
+
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      transform: scale(100%);
+      margin: 0 auto;
+      width: 100%;
+   
+
+      .info--text {
+        width: 80%;
+        height: 0;
+        margin: 0 auto;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          order: 2;
+        }
+      }
+
+      .info--line {
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 auto;
+
+        .info--button {
+          justify-content: space-around;
+          width: 100%;
+          order: 1;
+
+          .button--text {
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+
+          .button--git,
+          .button--linkedin,
+          .button--cv {
+            width: 35%;
+            margin: 3px;
+
+            p {
+              margin: 0 auto;
+              margin-top: 5px;
+              letter-spacing: 0px;
+              font-size: 14px;
+            }
+          }
+
+          .baloes {
+            width: 110%;
+            margin: 0px auto;
+            border: 3px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(80%);
+            text-transform: uppercase;
+            font-weight: bold;
+            height: 60px;
+          }
+
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+        margin-bottom: 3%;
+        margin-top: 0;
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 3.1rem;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      .info--description {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+        order: 3;
+    
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home--container {
+    margin: 0 auto;
+
+    width: 90vw;
+    height: 60vh;
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side {
+      display: none;
+    }
+
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      transform: scale(100%);
+      margin-top: 5%;
+      width: 100%;
+
+      .info--text {
+        width: 80%;
+
+        margin: 0 auto;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+
+      .info--line {
+        flex-direction: column-reverse;
+        width: 100% !important;
+        margin: 0 auto;
+
+        .info--button {
+          justify-content: space-around;
+          width: 100%;
+          margin-bottom: 8%;
+
+          .button--text {
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+
+          .button--git,
+          .button--linkedin,
+          .button--cv {
+            width: 35%;
+
+            p {
+              margin: 0 auto;
+              margin-top: 5px;
+            }
+          }
+
+          .baloes {
+            width: 100%;
+            margin: 0px auto;
+            border: 3px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(80%);
+            text-transform: uppercase;
+            font-weight: bold;
+            height: 60px;
+          }
+
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 3.1rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      .info--description {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home--container {
+    margin: 0 auto;
+    width: 90vw;
+    height: fit-content;
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side {
+      display: none;
+    }
+
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      transform: scale(110%);
+      margin-top: 5%;
+  
+      height: fit-content;
+
+      .info--text {
+        width: 80%;
+
+        margin: 0 auto;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          order: 2;        
+          margin-top: 2%;
+          height: fit-content !important;
+        
+        }
+      }
+
+      .info--line {
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 auto;
+
+        .info--button {
+          justify-content: space-around;
+          width: 80%;
+          margin: 0 auto;
+          order: 1;
+
+          .button--text {
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+
+          .button--git,
+          .button--linkedin,
+          .button--cv {
+            width: 35%;
+
+            p {
+              margin: 0 auto;
+              margin-top: 5px;
+            }
+          }
+
+          .baloes {
+            width: 100%;
+            margin: 0px auto;
+            border: 3px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(80%);
+            text-transform: uppercase;
+            font-weight: bold;
+            height: 60px;
+          }
+
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+        padding: 0; margin: 0;
+        font-size: 0.8rem;
+
+        text-align: center !important;
+      }
+
+      h1 {
+        font-size: 4.3rem;
+        text-align: center;
+        margin-top: -1% !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .info--description {
+        width: 80%;
+        text-align: right !important;
+        margin: 0 auto;
+        order: 3;
+       
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home--container {
+   
+  
+    width: 90vw;
+    height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side {
+      transform: scale(150%);
+    }
+
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      transform: scale(100%);
+      margin-top: 5%;
+      width: 100%;
+   
+      margin: 0 auto;
+
+      .info--text {
+        width: 80%;
+        
+        margin: 0 auto;
+
+        .info--column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+
+      .info--line {
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 auto;
+
+        .info--button {
+          justify-content: space-around;
+          width: 100%;
+
+          .button--text {
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+
+          .button--git,
+          .button--linkedin,
+          .button--cv {
+            width: 25%;
+
+            p {
+              margin: 0 auto;
+              margin-top: 5px;
+            }
+          }
+
+          .baloes {
+            width: 100%;
+            margin: 0px auto;
+            border: 3px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(80%);
+            text-transform: uppercase;
+            font-weight: bold;
+            height: 60px;
+          }
+
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+      
+        margin: 0;
+      }
+
+      h2 {
+        margin-top: -15px;
+        font-size: 3rem;
+        
+      }
+
+      .info--description {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        order: 4;
+        margin-top: 2%;
+      }
+    }
+  } }
+
+@media (min-width: 1120px) {
+  .home--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    height: 60vh;
+    margin-top: 3%;
+    margin-bottom: 5%;
+   
+
+  
+    //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
+    .logo--side { 
+      width: 15vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: absolute;
+      z-index: 0;
+  
+      @keyframes rotate-logo {
+        from {
+          transform: scale(350%) translate(-90%,20%) rotate(0deg);
+        }
+  
+        to {
+          transform: scale(350%) translate(-90%,20%) rotate(360deg);
+        }
+      }
+  
+      img {
+        width: 100%;
+        transform: scale(350%) translateX(-16%);
+        padding: 0;
+        animation: rotate-logo 180s linear 15s infinite normal;
+        -moz-animation: rotate-logo 180s linear 15s infinite normal;
+        -ms-animation: rotate-logo 180s linear 15s infinite normal;
+        -o-animation: rotate-logo 180s linear 15s infinite normal;
+        -webkit-animation: rotate-logo 180s linear 15s infinite normal;
+      }
+    }
+  
+    ////Todas as estilizações dos textos e links do lado direito da página Home.
+    .info--side {
+      display: flex !important;
+      flex-direction: column;
+      flex-wrap: wrap;
+    
+      width: 85vw;
+      padding: 3%;
+  
+      .info--text {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 6%;
+        width: 78%;
+        transform: scale(120%);
+  
+        .info--column {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          flex-wrap: wrap;
+          height: 90% !important;
+          order: 2;
+         
+  
+          p {
+            text-transform: uppercase;
+            padding: 0;
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: -20px;
+           
+          }
+          
+      h1 {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 7.2rem;
+        line-height: 8rem;
+        text-transform: uppercase;
+        padding: 0;
+        //   border: 1px solid #0ef02186;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        margin-top: -30px;
+        letter-spacing: 0.3rem; 
+      }
+  
+      h2 {
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 3vw;
+        text-transform: uppercase;
+        padding: 0;       
+        text-align: left;     
+        margin: 0;
+     
+      
+      }
+        }
+      }
+  
+      .info--line {
+        display: flex;
+        align-self: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+  
+        .info--button {
+       
+          width: 37vw;
+          max-width: 550px;
+          display: flex;
+          flex-direction: row;
+          padding: 8px;
+          justify-content: space-around;
+          order: 1;
+          margin: 0 auto !important;
+          transform: translate(55%,-35%);
+          position: absolute;
+          .button--text {
+            text-align: center;
+          }
+  
+          .button--git:hover,
+          .button--linkedin:hover,
+          .button--cv:hover {
+            transform: scale(110%);
+            transition: transform 0.1s ease;
+            cursor: pointer;
+          }
+  
+          .button--git {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+           
+            padding: 0;
+  
+            img {
+              width: 30%;  
+              margin: 0 auto;
+            }
+          }
+  
+          .button--linkedin {
+            width: 30%;
+  
+            img {
+              width: 30%;
+  
+              margin: 0 auto;
+            }
+          }
+  
+          .button--cv {
+            width: 30%;
+            
+  
+            img {
+              width: 30%;
+  
+              margin: 0 auto;
+            }
+          }
+  
+          .baloes {
+            width: 100%;
+            height: 65px;
+            margin: 0px auto;
+            border: 4px solid #000000;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            transform: scale(70%);
+            text-transform: uppercase;
+            font-weight: bold;
+           
+  
+            p {
+              margin-top: 8px;
+              font-size: 18px;
+            }
+          }
+  
+          .sb8:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid #000000;
+            border-top: 10px solid #000000;
+            border-bottom: 10px solid transparent;
+            right: 20px;
+            bottom: -23px;
+            transform: rotate(270deg);
+          }
+  
+          .sb8:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid rgba(255, 255, 255, 0);
+            border-top: 10px solid rgba(255, 255, 255, 0);
+            border-bottom: 10px solid transparent;
+            right: 17px;
+            bottom: -15px;
+            transform: rotate(270deg);
+          }
+        }
+      }
+  
+      p {
+        text-transform: uppercase;
+        padding: 0;
+        text-align: left;
+        font-size: 20px;
+        margin: 0;
+     
+      }
+      .info--description {
+        text-align: right;
+        //border: 1px solid navy;
+        width: 50%;
+        align-self: flex-end;
+        margin: 0;
+        order: 3;
+        padding: 15px;
+     
+     
+      
+      }
+    }
+  }
+  
+    
+}
