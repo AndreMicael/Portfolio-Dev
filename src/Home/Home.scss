@@ -786,14 +786,16 @@ $font-primary: "coolvetica_rg";
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .home--container {
-    margin-bottom: 0%;
-
+   
+  
     width: 90vw;
     height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
     .logo--side {
-      visibility: hidden;
+      transform: scale(150%);
     }
 
     ////Todas as estilizações dos textos e links do lado direito da página Home.
@@ -801,10 +803,12 @@ $font-primary: "coolvetica_rg";
       transform: scale(100%);
       margin-top: 5%;
       width: 100%;
+   
+      margin: 0 auto;
 
       .info--text {
         width: 80%;
-
+        
         margin: 0 auto;
 
         .info--column {
@@ -815,7 +819,7 @@ $font-primary: "coolvetica_rg";
       }
 
       .info--line {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100% !important;
         margin: 0 auto;
 
@@ -897,31 +901,40 @@ $font-primary: "coolvetica_rg";
       }
 
       h1 {
-        font-size: 5.7rem;
+        font-size: 5rem;
+      
+        margin: 0;
       }
 
       h2 {
         margin-top: -15px;
         font-size: 3rem;
+        
       }
 
       .info--description {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin: 0 auto;
+        order: 4;
+        margin-top: 2%;
       }
     }
   } }
 
-@media (min-width: 1120px) and (max-width: 2800px) {
+@media (min-width: 1120px) {
   .home--container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+   
     height: 60vh;
     margin-top: 3%;
     margin-bottom: 5%;
+   
 
   
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
@@ -931,14 +944,16 @@ $font-primary: "coolvetica_rg";
       flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
+      position: absolute;
+      z-index: 0;
   
       @keyframes rotate-logo {
         from {
-          transform: scale(350%) translateX(-16%) rotate(0deg);
+          transform: scale(350%) translate(-90%,20%) rotate(0deg);
         }
   
         to {
-          transform: scale(350%) translateX(-16%) rotate(360deg);
+          transform: scale(350%) translate(-90%,20%) rotate(360deg);
         }
       }
   
@@ -975,21 +990,23 @@ $font-primary: "coolvetica_rg";
           flex-direction: row;
           width: 100%;
           flex-wrap: wrap;
-          height: 80%;
+          height: 90% !important;
           order: 2;
+         
   
           p {
             text-transform: uppercase;
             padding: 0;
             text-align: left;
             font-size: 20px;
+            margin-bottom: -20px;
            
           }
           
       h1 {
         font-family: $font-primary;
         font-weight: 400;
-        font-size: 11rem;
+        font-size: 7.2rem;
         line-height: 8rem;
         text-transform: uppercase;
         padding: 0;
@@ -997,19 +1014,17 @@ $font-primary: "coolvetica_rg";
         text-align: left;
         width: 100%;
         margin: 0;
-     
+        margin-top: -30px;
         letter-spacing: 0.3rem; 
       }
   
       h2 {
         font-family: $font-primary;
         font-weight: 400;
-        font-size: 3.7vw;
+        font-size: 3vw;
         text-transform: uppercase;
-        padding: 0;
-        
-        text-align: left;
-        width: 100%;
+        padding: 0;       
+        text-align: left;     
         margin: 0;
      
       
@@ -1024,7 +1039,9 @@ $font-primary: "coolvetica_rg";
         flex-direction: column;
   
         .info--button {
-          width: 36vw;
+       
+          width: 37vw;
+          max-width: 550px;
           display: flex;
           flex-direction: row;
           padding: 8px;
@@ -1046,21 +1063,20 @@ $font-primary: "coolvetica_rg";
           }
   
           .button--git {
-            width: 25%;
+            width: 30%;
             display: flex;
             flex-direction: column;
-            //    border: 1px solid red;
+           
             padding: 0;
   
             img {
-              width: 30%;
-  
+              width: 30%;  
               margin: 0 auto;
             }
           }
   
           .button--linkedin {
-            width: 25%;
+            width: 30%;
   
             img {
               width: 30%;
@@ -1070,7 +1086,8 @@ $font-primary: "coolvetica_rg";
           }
   
           .button--cv {
-            width: 25%;
+            width: 30%;
+            
   
             img {
               width: 30%;
@@ -1081,7 +1098,7 @@ $font-primary: "coolvetica_rg";
   
           .baloes {
             width: 100%;
-            height: 80px;
+            height: 65px;
             margin: 0px auto;
             border: 4px solid #000000;
             padding: 5px;
@@ -1090,9 +1107,11 @@ $font-primary: "coolvetica_rg";
             transform: scale(70%);
             text-transform: uppercase;
             font-weight: bold;
+           
   
             p {
               margin-top: 8px;
+              font-size: 18px;
             }
           }
   
