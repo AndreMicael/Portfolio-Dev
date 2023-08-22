@@ -26,20 +26,22 @@ $font-primary: "coolvetica_rg";
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+  
 
     @keyframes rotate-logo {
       from {
-        transform: scale(350%) translateX(-16%) rotate(0deg);
+        transform: scale(350%) translate(-90%,20%) rotate(0deg);
       }
 
       to {
-        transform: scale(350%) translateX(-16%) rotate(360deg);
+        transform: scale(350%) translate(-90%,20%) rotate(360deg);
       }
     }
 
     img {
+     
       width: 100%;
-      transform: scale(350%) translateX(-16%);
+      transform: scale(350%) translate(-90%,20%) rotate(0deg);
       padding: 0;
       animation: rotate-logo 180s linear 15s infinite normal;
       -moz-animation: rotate-logo 180s linear 15s infinite normal;
