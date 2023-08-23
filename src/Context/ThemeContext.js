@@ -6,7 +6,6 @@ import Moon from '../img/moon.png';
 import LogoLight from '../img/logo_light.png';
 import LogoDark from '../img/logo_dark.png';
 
-
 export const ThemeContext = createContext()
 
 export const ThemeProvider = ({children}) => {
@@ -15,14 +14,16 @@ export const ThemeProvider = ({children}) => {
     const [logoToggle,setLogoToggle] = useState(ReactLogoLight);
     const [icon, setIcon] = useState(Sun);
     const [logoAndre, setLogoAndre] = useState(LogoLight);
-
-
+ 
+  
+   
+ 
 
       const toggleTheme = () => {
         setTheme(theme === "modo-claro" ? "modo-escuro" : "modo-claro" );
       };
 
-
+   
 
     const toggleLogo = () => {
         setLogoToggle(logoToggle === ReactLogoDark ? ReactLogoLight : ReactLogoDark );
@@ -37,6 +38,8 @@ export const ThemeProvider = ({children}) => {
       setLogoAndre(logoAndre === LogoLight ? LogoDark : LogoLight )
 
     } 
+
+ 
 
     return(
         <ThemeContext.Provider value={{toggleIcon,theme,icon,toggleTheme,toggleLogo,logoToggle,setTheme,toggleLogoAndre,logoAndre}}>

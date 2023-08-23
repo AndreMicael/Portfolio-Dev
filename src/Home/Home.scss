@@ -41,7 +41,7 @@ $font-primary: "coolvetica_rg";
     img {
      
       width: 100%;
-      transform: scale(350%) translate(-90%,20%) rotate(0deg);
+      transform: scale(350%) translate(-90%,20%) rotate(0deg) ;
       padding: 0;
       animation: rotate-logo 180s linear 15s infinite normal;
       -moz-animation: rotate-logo 180s linear 15s infinite normal;
@@ -961,7 +961,7 @@ $font-primary: "coolvetica_rg";
   
       img {
         width: 100%;
-        transform: scale(350%) translateX(-16%);
+        transform: scale(350%) translate(-90%,20%) rotate(0deg) ;
         padding: 0;
         animation: rotate-logo 180s linear 15s infinite normal;
         -moz-animation: rotate-logo 180s linear 15s infinite normal;

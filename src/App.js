@@ -13,20 +13,28 @@ import { ThemeContext } from './Context/ThemeContext';
 //  import Grids from './assets/grids'
 import Footer from './Footer';
 
+
 function App() {
 
   const {logoToggle} = useContext(ThemeContext)
   document.title = 'Página Inicial | Portfólio André Sampaio';
+
+ 
   
   return (
 
     <div className="App"> 
 
+    
+
         {/* <Grids> </Grids>     */}
     <div>
  
       <Navbar> <DarkMode> <div className='button-container--app'></div> </DarkMode> </Navbar>
-      <Home>  
+      <Home> 
+
+        
+    
       <img className='logo-react' src={logoToggle} alt="Logo-React-Animado"></img></Home>   
       <About/> 
       <Projects/>
