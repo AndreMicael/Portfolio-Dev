@@ -49,12 +49,19 @@
   @media (max-width: 480px) { 
 
 
+
     .home--button {
       width: calc(100px + 5%);
       height: 45px;
       margin: 0 auto;
       color: #000 !important;  
       padding: 0;
+
+      a {
+     
+        padding: 10% 10%;
+   
+      }
 
       button {
 
@@ -75,11 +82,15 @@
    .home--button  {
      
       margin-top: 5%;
+      
     }
   }
 
   .modo-escuro {
     .home--button  {
      color: #24687c;
+      margin-top: 5%;
+
+   
     }
   }
