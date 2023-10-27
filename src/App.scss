@@ -88,8 +88,25 @@ body {
 }
 
 .modo-claro {
+
+
+  .home--button button:hover {
+    color: #000 !important;
+  }
+  a {
+    color: #000 !important;
+  }
+
+
+  hr {
+    border-color: #171a1f;
+  }
+
+
   background-color: #fff;
   color: #000;
+
+ 
 }
 
 .modo-escuro {
@@ -102,12 +119,16 @@ body {
   transition: background-color 0.8s ease-in-out;
 
   .VerMais--button {
+  
 
     button {
       background-color: #61b8bb;
       border: none;
       color: #171a1f;
+   
+     
 }
+
 }
 
   .info--sider {
@@ -135,12 +156,14 @@ body {
   .info--button .button--text {
     filter: invert(1);
   }
+
   .home--button button {
     border-color: #61b8bb !important;
     border-width: 4px;
     background-color: transparent;
     box-shadow: none;
     color: white !important;
+    border: 1px solid;
   }
   .home--button button:hover {
     border-color: #61b8bb !important;
@@ -198,6 +221,7 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+  
   }
 
   .about--container {

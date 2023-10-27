@@ -79,6 +79,18 @@ a {
       flex-direction: row;
       justify-content: space-around;
       margin-top: 25px;
+
+      a {
+       
+        padding: 25% 50% 25% 50%;
+        margin-left: -50%;
+     
+      }
+      a:hover{
+        color:#24687c;
+      }
+
+
       button {
         background-color: transparent;
         color: #000;

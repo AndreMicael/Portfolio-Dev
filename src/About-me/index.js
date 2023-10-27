@@ -12,7 +12,7 @@ function About() {
 <div id='about-me' className="about--container">
 
   
-  <Botao>Contato</Botao>
+  <Botao><a href='#contact'>Contato</a></Botao>
 
   <div className="gap20"> </div>
 

@@ -14,6 +14,15 @@
     margin: 0 auto;
     color: #000 !important;  
     padding: 0;
+
+    a {
+     
+      padding: 10% 25%;
+    }
+    a:hover{
+      color: #24687c ;
+     
+    }
   
     button {
       border: 3px solid #000 !important;
@@ -32,7 +41,7 @@
     }
     button:hover {
       transform: scale(110%);
-  
+      color: #24687c !important;
       transition: transform 0.1s ease;
     }
   }
@@ -52,7 +61,19 @@
         font-size: 18px;
         letter-spacing: 2px;
         box-shadow: 3px 3px #000;
-      }
+
       
+      }
+     
+      
+    }
+  }
+
+
+  .modo-claro {
+   
+   .home--button  {
+     
+      margin-top: 5%;
     }
   }
