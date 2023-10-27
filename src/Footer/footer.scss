@@ -25,6 +25,10 @@
       height: 45px;
       margin: 10px 10px 10px 5px;
       padding: 10px;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      
+      line-height: 45px;
     }
   
     .footer-icons {
@@ -165,6 +169,7 @@
   
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .footer--container {
+    
       width: 100vw;
       margin: 0 auto;
       height: 15vw;
@@ -191,6 +196,7 @@
         height: 45px;
         margin: 10px 10px 10px 5px;
         padding: 10px;
+        
       }
   
       .footer-icons {

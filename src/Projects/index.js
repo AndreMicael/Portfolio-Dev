@@ -8,9 +8,9 @@ import Projeto01 from "../img/projeto01.png"
 
 function Projects() {
     return (  
-
+        
         <section className='projects--container'>
-
+            <hr></hr>
             <h1> Projetos.</h1>
           
             <Mockup title="Ion Imoveis"
@@ -32,7 +32,7 @@ function Projects() {
             projeto={Projeto01}
             position='rows'             
             ></Mockup>   </div>         
-          <br/>
+          
                <Link to="/"> <Botao>Ver Mais</Botao> </Link>
         </section>
 

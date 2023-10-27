@@ -8,6 +8,7 @@ a {
   height: 35vh;
   justify-content: center;
   margin-bottom: 30px;
+
  
 
   .mockup--side {
@@ -37,9 +38,8 @@ a {
   }
   .info--sider {
     width: 50%;
-
     text-align: left;
-    padding: 20px 10px 20px 30px;
+    padding: 10% 10px 5% 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +50,6 @@ a {
     }
     p {
       padding: 10px;
-
       font-size: 0.8rem;
     }
     h5 {

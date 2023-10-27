@@ -92,6 +92,10 @@ body {
 }
 
 .modo-escuro {
+  .about--title-in {
+    color: $color-primary-dark;
+  }
+  hr { border-color: $color-primary-dark !important;}
   background-color: #2a2f36;
   color: #dedede;
   transition: background-color 0.8s ease-in-out;
@@ -231,6 +235,7 @@ body {
 
     
     .container--skills {
+    
       filter: invert(1);
 
       ul {
@@ -255,7 +260,7 @@ body {
     ul {
     }
     div {
-      margin-left: 50px !important;
+      margin-left: 0px !important;
     }
 
     .skills {

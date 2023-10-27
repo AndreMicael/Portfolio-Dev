@@ -13,6 +13,11 @@ $color-secondary-dark: rgb(37, 37, 37);
   font-style: normal;
 }
 
+hr { border-color: $color-primary-dark;
+    width: 50vw;
+    margin: 0 auto;
+}
+
 .projects--container {
   width: 66.67vw;
   margin: 0 auto;
@@ -109,15 +114,17 @@ $color-secondary-dark: rgb(37, 37, 37);
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+ 
   .projects--container {
     width: 80vw;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 0px;
     height: 100vh;
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+   
 
     h1 {
     }
