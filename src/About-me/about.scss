@@ -343,7 +343,7 @@ h1 {
         grid-template-columns: 100%;
         column-gap: 5% !important;
         row-gap: 10%;
-
+      
         .icon {
         }
 
@@ -366,12 +366,8 @@ h1 {
             width: 100%;
 
             h5 {
-              border-left: 2px solid #3f3f3f;
-              padding-left: 15px;
-              font-weight: 400;
-              color: #3f3f3f;
-              margin-left: 15px;
-              font-size: 0.7rem;
+              display: none;
+             
             }
           }
         }
