@@ -10,8 +10,7 @@ function About() {
   
   return (
 <div className="about--container">
-  <br />
-  <br />  <br />
+
   
   <Botao>Contato</Botao>
 

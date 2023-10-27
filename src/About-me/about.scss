@@ -219,6 +219,8 @@ h1 {
   .about--container {
     width: 85vw;
     flex-direction: row;
+    
+   
 
     .about--container-img {
       display: flex;
@@ -226,28 +228,31 @@ h1 {
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
+     
+      margin-top: -10% !important;
+     
 
       .about--title {
         width: 60%;
         height: 15% !important;
         line-height: 15% !important;
         font-family: $font-primary;
-        font-size: 2rem;
+        font-size: 1.9rem;
         height: 40px;
         margin: 0;
-        padding-top: 10%;
+        padding-top:50%;
         box-sizing: border-box;
+       
+      }
+
+      .about--title-in {
+        color: $font-primary;
+        font-size: 1.9rem;
       }
 
       .about--img {
-        width: 70px !important;
-        height: 70px !important;
-        display: flex;
-        border: 3px solid #000;
-        box-shadow: 2px 2px #000 !important;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-bottom: 5%;
+       display: none;
+        
 
         img {
           width: 100%;
@@ -262,8 +267,9 @@ h1 {
         margin: 0 auto;
 
         p {
-          font-size: 18px;
+          font-size: 16px;
           text-align: justify;
+          line-height: 19px;
         }
 
         h1 {

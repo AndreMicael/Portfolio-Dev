@@ -40,6 +40,7 @@ $color-secondary-dark: rgb(37, 37, 37);
 
 
 @media (max-width: 480px) { 
+  
 
   .projects--container {
     width: 90vw;
@@ -57,7 +58,7 @@ $color-secondary-dark: rgb(37, 37, 37);
       width: 100%;
       margin-top: 0;
       letter-spacing: 0;
-    
+      
       text-align: left;
     }
   }

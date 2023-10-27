@@ -198,6 +198,8 @@ body {
   .about--container {
     .about--img {
      background-color: transparent;
+     
+    
 
 
      img {
@@ -253,7 +255,7 @@ body {
     ul {
     }
     div {
-      margin-left: 20px !important;
+      margin-left: 50px !important;
     }
 
     .skills {
@@ -374,7 +376,62 @@ body {
   
 }
 
+@media (max-width: 480px) {
 
+  
+
+
+
+  .about--container {
+    width: 85vw;
+    flex-direction: row;
+    h1,.about--title-in,.about--title-out  {
+      font-size: 1.5rem !important;
+      font-weight: lighter;
+    }
+    
+   
+
+    .about--container-img {
+      
+      .about--title-in {
+        color: $color-primary-dark;
+      
+      }
+
+
+    }     
+
+  }
+
+  .container--skills {
+   
+
+    ul {
+      background-color: #39404d !important;
+    }
+    div {
+      margin-left: 3px !important;
+    }
+  }
+
+  .container--skills-column {
+    filter: invert(1);
+
+
+
+  
+    div {
+      margin-left: 3px !important;
+    }
+  }
+  
+
+
+
+
+
+}
   @media screen and (max-width: 768px) {
  
     .nav__toggler {

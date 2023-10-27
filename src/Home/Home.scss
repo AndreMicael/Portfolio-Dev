@@ -238,8 +238,7 @@ $font-primary: "coolvetica_rg";
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 53vh;
-    
+    height: 53vh;    
     margin: 0 auto !important;
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
@@ -247,9 +246,10 @@ $font-primary: "coolvetica_rg";
       margin: 10% 0 10% 0;
       padding: 0;
       position: relative;
-      left: 82%;
+      left: 90%;
       top: 0%;
       width: 14%;
+      
     }
 
     ////Todas as estilizações dos textos e links do lado direito da página Home.
@@ -271,18 +271,26 @@ $font-primary: "coolvetica_rg";
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: flex-start;
+          align-items: center;
           width: 100%;
+       
           order: 1;
-
           padding: 0;
-
+          
+          h1 {
+            font-size: 2.4rem;
+          }
           p {
-            margin-bottom: 2%;
+            margin-bottom: 5%;
             margin-top: 5%;
             font-size: 0.6rem;
-
             text-align: left;
+           
+           
+          }
+          h2 {
+            text-align: center;
+
           }
         }
 
@@ -340,10 +348,10 @@ $font-primary: "coolvetica_rg";
         width: 100%;
         margin-top: -6% !important;
         font-size: 0.6rem;
-
         margin-bottom: 5% !important;
         text-align: left;
         margin: 0 auto;
+        text-align: center;
       }
 
       h1 {

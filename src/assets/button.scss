@@ -12,8 +12,7 @@
     width: calc(180px + 5%);
     height: 70px;
     margin: 0 auto;
-    color: #000 !important;
-  
+    color: #000 !important;  
     padding: 0;
   
     button {
@@ -38,3 +37,22 @@
     }
   }
   
+  @media (max-width: 480px) { 
+
+
+    .home--button {
+      width: calc(100px + 5%);
+      height: 45px;
+      margin: 0 auto;
+      color: #000 !important;  
+      padding: 0;
+
+      button {
+
+        font-size: 18px;
+        letter-spacing: 2px;
+        box-shadow: 3px 3px #000;
+      }
+      
+    }
+  }
