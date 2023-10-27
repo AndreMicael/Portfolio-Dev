@@ -266,3 +266,9 @@ $color-secondary-dark: rgb(37, 37, 37);
     }
   }
 }
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .contact--container {
+    height: 95vh;
+  }
+}
