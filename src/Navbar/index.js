@@ -53,7 +53,7 @@ function Navbar(props) {
                 <div className='links--nav'> 
                     <ul className={active}>
                         <li className="nav__item animacao-underline"> <a href="#" className="nav__link">Inicio</a></li>
-                        <li className="nav__item  animacao-underline"> <a href="#about-me" className="nav__link">Sobre Mim</a></li>
+                        <li className="nav__item  animacao-underline"> <a href="#aboutme" className="nav__link">Sobre Mim</a></li>
                         <li className="nav__item animacao-underline"> <a href="#skills" className="nav__link">Habilidades</a></li>
                         <li className="nav__item animacao-underline"> <a href="#projects" className="nav__link">Projetos</a></li>
                         <li className="nav__item animacao-underline"> <a href="#contact" className="nav__link">Contato</a></li>

@@ -9,7 +9,7 @@ function About() {
   
   
   return (
-<div id='about-me' className="about--container">
+<div id='aboutme' className="about--container">
 
   
   <Botao><a href='#contact'>Contato</a></Botao>
