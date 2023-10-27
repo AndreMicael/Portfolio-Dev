@@ -10,32 +10,30 @@ export const ThemeContext = createContext()
 
 export const ThemeProvider = ({children}) => {
    
-    const [theme, setTheme] = useState('modo-claro');
-    const [logoToggle,setLogoToggle] = useState(ReactLogoLight);
-    const [icon, setIcon] = useState(Sun);
-    const [logoAndre, setLogoAndre] = useState(LogoLight);
+    const [theme, setTheme] = useState('modo-escuro');
+    const [logoToggle,setLogoToggle] = useState(ReactLogoDark);
+    const [icon, setIcon] = useState(Moon);
+    const [logoAndre, setLogoAndre] = useState(LogoDark);
  
   
    
  
 
       const toggleTheme = () => {
-        setTheme(theme === "modo-claro" ? "modo-escuro" : "modo-claro" );
+        setTheme(theme === "modo-escuro" ? "modo-claro" : "modo-escuro" );
       };
-
    
 
     const toggleLogo = () => {
-        setLogoToggle(logoToggle === ReactLogoDark ? ReactLogoLight : ReactLogoDark );
+        setLogoToggle(logoToggle === ReactLogoLight ? ReactLogoDark : ReactLogoLight );
     }
 
     const toggleIcon = () => {
-      setIcon(icon === Sun ? Moon : Sun )
+      setIcon(icon === Moon ? Sun : Moon )
 
     } 
-
     const toggleLogoAndre = () => {
-      setLogoAndre(logoAndre === LogoLight ? LogoDark : LogoLight )
+      setLogoAndre(logoAndre === LogoDark ? LogoLight : LogoDark )
 
     } 
 
