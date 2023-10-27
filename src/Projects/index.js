@@ -10,7 +10,7 @@ import Projeto02 from "../img/projeto02.png"
 function Projects() {
     return (  
         
-        <section className='projects--container'>
+        <section id='projects' className='projects--container'>
             <hr></hr>
             <h1> Projetos.</h1>
           

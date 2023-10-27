@@ -9,7 +9,7 @@ function About() {
   
   
   return (
-<div className="about--container">
+<div id='about-me' className="about--container">
 
   
   <Botao>Contato</Botao>
@@ -39,7 +39,7 @@ function About() {
 
   </div>
 
-  <div className="skills--section">
+  <div id='skills' className="skills--section">
     <h1>Habilidades.</h1>
     <br />
     <div className="container--skills">
