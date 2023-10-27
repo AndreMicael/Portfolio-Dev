@@ -232,23 +232,23 @@ $font-primary: "coolvetica_rg";
 .esconder {
   visibility: hidden;
 }
-
+//Celular//
 @media (max-width: 480px) {
   .home--container {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 53vh;
-
+    
     margin: 0 auto !important;
 
     //Todas as estilizações da logo de React que está no lado esquerdo da página Home.
     .logo--side {
-      margin: 0;
+      margin: 10% 0 10% 0;
       padding: 0;
       position: relative;
       left: 82%;
-      top: 10%;
+      top: 0%;
       width: 14%;
     }
 
@@ -367,7 +367,7 @@ $font-primary: "coolvetica_rg";
 @media (min-width: 481px) and (max-width: 575.98px) {
   .home--container {
     margin-bottom: 0%;
- 
+    background-color: #fff000;
     width: 90vw;
     height: 90vw;
     margin: 0 auto;
@@ -511,7 +511,7 @@ $font-primary: "coolvetica_rg";
 @media (min-width: 576px) and (max-width: 767.98px) {
   .home--container {
     margin: 0 auto;
-
+    
     width: 90vw;
     height: 60vh;
 
